@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="{{ asset('img/favicon.ico') }}" rel="icon" type="image/ico">
+<meta charset = "UTF-8">		
+<title>CS Crm</title>
+<link href="">
+<link href="{{ asset('css/style_Project_Work.css') }}" rel="stylesheet" type="text/css" charset="utf-8"/>
+<link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet" type="text/css">
+	</head>
+	<body class="body">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+		
+		<header class="contenitore_header cf">
+		<p class = "logo"> <a href="Admin_Index.html"><img src= "assets/icons/logo_bianco.png" width="100" height="40"></a></p>
+			<div class="header_info">
+				<p class = "admin"><span class="scrittaAdmin">Admin:</span> {{ app.user.nome }}</p>
+				<p class = "dataEora">LUN 01/10/2015 - 16:33.05</p>
+			</div>
+		
+			<div class="contenitore_logout">
+				<p class = "logout"><a href="Login_admin.html">Logout</p>
+				<i class="fa fa-sign-out fa-1x"></a></i>
+			</div>
+		</header>
+
+
+	<div class="contenitore_breadcrumb">
+	<i>Home</i>
+	</div>
+
+
+
+		<nav class="contenitore_menu">
+			<p class="home"><a href="Admin_Index.html">HOME</a></p>
+			<!--<p class="aziende"><a href="http://localhost/PROJECTWORK/Admin_aziende.html">AZIENDE</a></p>
+			<p class="contatti"><a href="http://localhost/PROJECTWORK/-----------.html">CONTATTI</a></p>-->
+			<p class="campagne"><a href="Admin_campagne.html">CAMPAGNE</a></p>
+			<p class="operatori"><a href="Admin_operatori.html">OPERATORI</a></p>
+			<p class="report"><a href="Admin_report.html">REPORT</a></p>
+		</nav>
+
+		<aside class="contenitore_principale cf">
+				<div class="titolo_contenuti">Report
+				</div>
+					<div class="informazioni_operatore cf">
+						<div class="profilo_operatore">Sezione</div>  
+						<!--<div class="assegna_contatti_operatore">Assegna contatti</div>
+						<div class="pausa_operatore">Sospendi</div>
+						<div class="rimuovi_operatore">Definisci</div>-->
+					</div>	
+					<nav class="contenitore_elenco_operatori">
+					
+						<div class="tendina_1_operatore cf">
+								<div class="icona_tendina"><i class="fa fa-flag fa-11x"></i></div>
+								<div class="nomeEcognome"><b>Report</br>Campagne</b></div>
+								
+									<div class="contenuto_tendine"><p></p></div>
+										<div class="contenitore_icone">
+											<a href="Seleziona_campagne_1.html"><nav class="modifica_elemento">Seleziona Campagna/e</nav></a>
+											<!--<div class="icona_rimuovere"><a href="------------"><i class="fa fa-trash-o fa-1x"></i></a></div>
+											<div class="icona_pausa"><a href="------------"><i class="fa fa-pause fa-1x"></i></a></div>
+											<div class="icona_assegna_contatti"><a href="--------------"><i class="fa fa-link fa-1x"></i></a></div>-->
+										</div>
+								
+						</div>
+
+						<div class="tendina_1_operatore cf">
+								<div class="icona_tendina"><i class="fa fa-user fa-11x"></i></div>
+								<div class="nomeEcognome"><b>Report</br>Operatori</b></div>
+								
+									<div class="contenuto_tendine"><p></p></div>
+										<div class="contenitore_icone">
+											<a href="Seleziona_operatori_1.html"><nav class="modifica_elemento">Seleziona Operatore/i</nav></a>
+											<!--<div class="icona_rimuovere"><a href="------------"><i class="fa fa-trash-o fa-1x"></i></a></div>
+											<div class="icona_pausa"><a href="------------"><i class="fa fa-pause fa-1x"></i></a></div>
+											<div class="icona_assegna_contatti"><a href="--------------"><i class="fa fa-link fa-1x"></i></a></div>-->
+										</div>
+								
+						</div>
+
+						
+					</nav>
+					
+		</aside>
+
+
+
+<div class="contenitore_sfondo cf">
+
+</div>
+
+
+<!--INSERIRE JQUERY per FAR FUNZIONARE LO SCRIPT-->
+<script type="text/javascript">
+$('.apriFinestraDettagliCampagna').on('click', function(evt){
+	evt.preventDefault();
+	$('#tendina').removeClass('hidden');
+	$('.body').
+});
+</script>
+	</body>
+</html>

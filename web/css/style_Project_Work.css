@@ -1,0 +1,1197 @@
+/*@font-face{ font-family: 'MyWebFont'; 
+	src: url('WebFont.eot'); 
+	src: url('WebFont.eot?#iefix') 
+	format('embedded-opentype'), 
+	url('WebFont.woff') 
+	format('woff'), 
+	url('WebFont.ttf') 
+	format('truetype'), 
+	url('WebFont.svg#webfont') format('svg'); 
+} */
+
+/*@font-face {
+	font-family: 'Akkurat';
+	src: url('../fonts/Akkurat.ttf');
+	}*/
+
+@font-face{ 
+	font-family: 'Akkurat'; 
+	src: 
+		url('font/Akkurat-Normal.ttf') format('truetype'), /* IE9 Compat Modes */ 
+		url('font/Akkurat-Normal.woff') format('woff'); /* Pretty Modern Browsers */
+		/*url('font/Akkurat-Normal.eot'), /* IE9 Compat Modes */
+}
+
+@font-face{ 
+	font-family: 'AkkuratLightPro';
+	src: 
+		url('font/Akkurat-Light.ttf') format('truetype'), /* IE9 Compat Modes */
+		url('font/Akkurat-Light.woff') format('woff'); /* Pretty Modern Browsers */
+		/*url('font/Akkurat-Light.eot'), /* IE9 Compat Modes */
+}
+
+.body {
+margin: 0;
+padding: 0;
+}
+
+.cf::after, .cf::before{
+	content: ' ';
+	display: block;
+	clear: both;
+}
+
+.contenitore_logout a,p:link {text-decoration: none; color: white;}
+
+.contenitore_menu a,p:link {text-decoration: none;
+    border-radius: 4px;
+    width: 100px;
+    color: #333333;}
+/*.contenitore_menu p:visited {text-decoration: none;
+    color: #333333;}*/
+.contenitore_menu p:hover {text-decoration: none;
+	padding-left: 3px;
+    background-color: white;
+    border-radius: 4px;
+    width: 100px;
+    color: #CC3333;}
+.contenitore_menu p:active {text-decoration: none;
+	padding-left: 3px;
+    background-color: white;
+    border-radius: 4px 0px 0px 4px;
+    width: 117px;
+    color: #CC3333;
+    position: relative;
+    box-shadow: -3px 4px 3px #888888;
+    z-index: 2;}
+
+
+	/*p.selezionato
+	 p.home { 
+	padding-left: 3px;
+    background-color: white;
+    border-radius: 4px 0px 0px 4px;
+    width: 117px;
+    color: #CC3333;
+    position: relative;
+    box-shadow: -3px 4px 3px #888888;
+    z-index: 2;
+	} 
+	*/
+
+/*----------------stile freccetta per paragrafo selezionato --------------------------*/
+/*p.home::after { 
+	position: absolute;
+	content: '';
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: -5px 5px 5px #888888;
+    border-radius: 2px;
+    width: 32px;
+    height: 32px;
+    transform:rotate(45deg);
+    left: 119px;
+    bottom: 528px;
+    z-index: 1;
+	}*/
+/*------------------stile freccetta per paragrafo selezionato------------------------*/
+
+/*---vecchio sfondo-----url(../assets/images/sfondo_crm.png);*/
+
+.contenitore_sfondo {
+	background: radial-gradient(#556270 , #CCCCCC);
+	height: 560px;
+	padding:0px,0px,0px,0px;
+}
+
+.contenitore_header {
+	background-color: #333333; 
+	position: relative; left:0px; top: 0px;
+}
+
+.logo {
+	float: left; 
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-right: 20px;
+	margin-bottom: 0px;
+}
+
+.header_info{
+	float: left;
+}
+
+.admin {
+	color: white;
+	background-color: #CC3333;
+	font-family: 'Akkurat';
+	width: auto;
+	padding-top: 5px;
+	padding-left: 7px;
+	padding-bottom: 4px;
+	margin-bottom: 8px;
+	margin-top: 0px;
+	border-radius: 0px 0px 10px 0px;
+	}
+
+span.scrittaAdmin {color: lightgrey;
+font-family: 'Webfont' Akkurat Light Pro;
+font-style: italic;
+}
+
+
+#dataEora {
+	color: #333333; 
+	background-color: white;
+	font-family: Akkurat Light Pro;
+	width: 248px;
+	padding-left: 7px;
+	margin-top: 0;
+	margin-bottom: 0;
+	}
+
+.contenitore_logout { 
+	background-color: #CC3333;
+	color: white; 
+	width: 70px; 
+	text-align: center; 
+	font-family: Akkurat Light Pro;
+	float: right;
+	height: 60.65px;
+	border-left: 4px solid #CCCCCC;
+	}
+
+.contenitore_logout:hover { 
+	background-color: white;
+	color: #CC3333; 
+	width: 70px; 
+	text-align: center; 
+	font-family: 'WebFont' , Akkurat Light Pro;
+	float: right;
+	height: 60.65px;
+	border-left: 4px solid #CCCCCC;
+	}
+
+
+
+i {color: #333333;}
+
+.tendina_1 i.fa , .tendina_2 i.fa , .tendina_3 i.fa {
+	float: right;
+	padding-top: 6px;
+	padding-right: 8px;
+}
+
+.logout{ 
+	background-color: #333333; 
+	color: white; 
+	width: 70px; 
+	text-align: center; 
+	font-family: 'WebFont' , Akkurat Light Pro;
+	margin-bottom: 2px;
+	}
+
+.contenitore_breadcrumb {
+	background-color: #CC3333;
+	padding-left: 135px; 
+	padding-top: 5px; 
+	height: 20px;  
+	font-family: 'WebFont' , Akkurat Light Pro;
+	color: white;
+	border-top: 4px solid #CCCCCC;
+	
+	}
+
+
+.contenitore_menu {
+	font-family: 'WebFont' , Akkurat;
+	padding-left: 10px;
+	color: #333333;
+	width: 119px;
+	float:left;
+	margin-top: 3px;
+
+	}
+
+
+.contenitore_principale {
+	background-color: rgba(255,255,255,0.8);
+	/*opacity: 0.4;
+    filter: alpha(opacity=40);*/
+    z-index: 14;
+	height: auto;
+	width: 60%;
+	box-shadow: -7px 10px 5px #888888;
+	margin-top: 16px;
+	float:left;
+	}
+
+.contenitore_elenco_operatori {
+	height: 410px;
+	width: 100%;
+	overflow: scroll;
+}
+
+.titolo_contenuti {
+	background-color: #CCCCCC;
+	border-top: 3px solid #333333;
+	margin-left: 10px;
+	margin-top: 9px;
+	/*height: 35px;*/
+	width: 95%;
+	float:left;
+	font-family: 'WebFont' , Akkurat;
+	font-size: 2em;
+	padding-left: 10px;
+	padding-bottom: 3px;
+	color: #333333;
+	z-index: 20;
+	position: relative;
+}
+
+.tendina_1 , .tendina_2 , .tendina_3 {
+	position: relative;
+	z-index: 10;
+	font-family: 'WebFont' , Akkurat Light Pro;
+	font-size: 1.5em;
+	padding-left: 10px;
+	padding-top: 5px;
+	color: #333333;
+	background-color: #CCCCCC;
+	box-shadow: -3px 3px 3px #999999;
+	float:left;
+	margin-left: 10px;
+	margin-right: 27px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 200px;
+	height:280px;
+	border-right: 1px solid #CCCCCC;
+}
+
+.tendina_1 .contenuto_tendine, .tendina_2 .contenuto_tendine, .tendina_3 .contenuto_tendine {
+	background-color: white;
+	height: 180px;
+	font-family: 'WebFont' , Akkurat Light Pro;
+	color: #333333;
+	font-size: 0.65em;
+	padding-left: 10px;
+	padding-top: 5px;
+	margin-left: -10px;
+	}
+
+a:hover .tendina_1 ,a:hover .tendina_2 ,a:hover .tendina_3 {background-color: #CC3333; text-decoration: none;}
+
+a:hover .tendina_1_operatore {background-color: #CC3333; text-decoration: none;}
+
+/*.contenuto_tendine {
+	font-family: 'WebFont' , Akkurat Light Pro;
+	font-size: 0.65em;
+	padding-left: 10px;
+	padding-top: 5px;
+	color: #333333;
+	background-color: white;
+	float:left;
+	margin-top: 5px;
+	margin-left: -10px;
+	width: 200px;
+	height:180px;
+}*/
+
+
+.barre_completamento {
+	height: 9px;
+	width: 180px; /*width in base al numero contatti contattati*/
+	background-color: lightgreen;
+	margin-top: 7px;
+	float: left;
+	margin-left: 0px;
+}
+
+.tendina_1_operatore {
+	position: relative;
+	z-index: 10;
+	font-family: 'WebFont' , Akkurat Light Pro;
+	font-size: 1em;
+	padding-left: 10px;
+	padding-top: 5px;
+	color: #333333;
+	background-color: #CCCCCC;
+	box-shadow: -3px 3px 3px #999999;
+	float:left;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	width: 95%;
+	height: 60px;
+	border-top: 1px solid #CCCCCC;
+}
+
+
+.informazioni_operatore {
+	position: relative;
+}
+
+
+.profilo_operatore {
+	width: 100px;
+	font-family: 'WebFont' , Akkurat Light Pro;
+	color: #333333;
+	display: inline-block;
+	right: 10px;
+	margin-top: 10px;
+	margin-left: 60px;
+	margin-right: 170px;
+}
+
+
+.assegna_contatti_operatore {
+	width: 130px;
+	font-family: 'WebFont' , Akkurat Light Pro;
+	color: #333333;
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right: 25px;
+}
+
+.pausa_operatore {
+	width: 110px;
+	font-family: 'WebFont' , Akkurat Light Pro;
+	color: #333333;
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+
+.rimuovi_operatore {
+	width: 130px;
+	font-family: 'WebFont' , Akkurat Light Pro;
+	color: #333333;
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 0px;
+}
+/*----------------------------------------INIZIO BOTTONI ALTI A DX---------------------------------------------------*/
+
+.aggiungi_elemento {
+	width: 250px;
+	height: 25px;
+	font-family: 'WebFont' , Akkurat;
+	font-size: 0.5em;
+	color: white;
+	background-color: #6C6;
+	text-align: center;
+	border-radius: 6px;
+	border: 1px solid #6C6;
+	float: right;
+	margin-top: 10px;
+	margin-right: 30px;
+}
+
+.aggiungi_elemento:hover {
+	width: 250px;
+	height: 25px;
+	font-family: 'WebFont' , Akkurat;
+	font-size: 0.5em;
+	color: #6C6;
+	background-color: white;
+	text-align: center;
+	border-radius: 6px;
+	border: 1px solid #6C6;
+	float: right;
+	margin-top: 10px;
+	margin-right: 30px;
+}
+
+
+.modifica_elemento {
+	width: 420px;
+	height: 25px;
+	font-family: 'WebFont' , Akkurat;
+	font-size: 1em;
+	color: white;
+	background-color: blue;
+	text-align: center;
+	border-radius: 6px;
+	border: 1px solid blue;
+	float: right;
+	margin-top: 18px;
+	margin-right: 30px;
+}
+
+.modifica_elemento:hover {
+	width: 420px;
+	height: 25px;
+	font-family: 'WebFont' , Akkurat;
+	font-size: 1em;
+	color: blue;
+	background-color: white;
+	text-align: center;
+	border-radius: 6px;
+	border: 1px solid blue;
+	float: right;
+	margin-top: 18px;
+	margin-right: 30px;
+}
+
+/*---------------------------------------------------FINE BOTTONI ALTI A DX-------------------------------------*/
+/*.tendina_1_operatore .contenuto_tendine {
+	font-family: 'WebFont' , Akkurat Light Pro;
+	font-size: 0.65em;
+	padding-left: 10px;
+	padding-top: 0px;
+	color: #333333;
+	background-color: white;
+	margin-top: -5px;
+	margin-left: 0px;
+	width: 120px;
+	height: 65px;
+	display: inline-block;
+}*/
+
+/*.tendina_1_operatore .contenuto_tendine p{
+margin: 0;
+padding-top: 5px;
+}*/
+
+
+.tendina_1_operatore .icona_tendina {
+float: left;
+margin-top: 12px;
+
+}
+
+.tendina_1_operatore .icona_tendina_report {
+float: left;
+margin-top: 12px;
+
+}
+
+.icona_tendina i:hover {
+color: #CC3333;
+}
+
+.icona_rimuovere i:hover {
+color: #CC3333;
+}
+
+.icona_pausa i:hover {
+color: #CC3333;
+}
+
+.icona_assegna_contatti i:hover {
+color: #CC3333;
+}
+
+.tendina_1_operatore .nomeEcognome {
+float: left;
+margin-top: 9px;
+margin-left: 10px;
+margin-right: 20px;
+width: 133px;
+
+}
+
+.tendina_1_operatore .contenitore_icone {
+	width: 480px;
+	background-color: white;
+	height: 65px;
+	display: inline-block;
+	margin-top: -21px;
+}
+
+.tendina_1_operatore .icona_rimuovere {
+	float: right;
+	font-size: 2em;
+	padding-top: 12px;
+	margin-right: 35px;
+	margin-left: 73px;
+}
+
+.tendina_1_operatore .icona_pausa {
+	float: right;
+	font-size: 2em;
+	padding-top: 12px;
+	margin-right: 5px;
+	margin-left: 103px;
+}
+.tendina_1_operatore .icona_assegna_contatti {
+	float: right;
+	font-size: 2em;
+	padding-top: 12px;
+	margin-right: 5px;
+}
+
+/*-------------------------------------------- INIZIO PAGINE PICCOLE---------------------------------------------*/
+
+.contenitore_header_pp{
+	height: 400px;
+	background-color: #CCCCCC;
+	color: #333333;
+	width: 650px;
+	margin-top: 80px;
+	margin-left: 270px;
+	font-family: Akkurat;
+	font-size: 1.5em;
+	padding: 10px 0px 0px 10px;
+	position: absolute;
+	z-index: 1;
+	border-radius: 20px;
+}
+
+.contenitore_header_pp span {
+	font-family: Akkurat Light Pro;
+}
+/*-------------------------------------LOGIN-----------------------*/
+.contenitore_header_login{
+	height: 240px;
+	background-color: #CCCCCC;
+	color: #333333;
+	width: 370px;
+	margin-top: 12%;
+	margin-left: 35%;
+	font-family: Akkurat;
+	font-size: 25px;
+	padding: 15px 0px 0px 30px;
+	position: absolute;
+	z-index: 1;
+	border-radius: 20px;
+}
+
+.contenitore_header_pp span {
+	font-family: Akkurat Light Pro;
+}
+
+.contenuti_login {
+	width: 95%;
+	background-color: #CCCCCC;
+	float: left;
+	margin: 0;
+	padding: 0;
+
+}
+
+/*.contenuti_login p {
+font-family: Akkurat Light Pro;
+	margin-top: 0px;
+	padding: 5px 0px 0px 5px;
+	margin: 0;
+}*/
+
+#form_username , #form_password {
+	padding-top: 0;
+	float: left;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	width: 95%;
+	height: 25px;
+	
+}
+
+label[for="form_username"], label[for="form_password"]{
+	margin-left: 0px;
+	margin-bottom: 0;
+	font-size: 20px;
+	font-family: Akkurat;
+}
+
+
+/*---------------------------------CONTENITORE HEADER OPERATORE----------------------------*/
+.contenitore_header_pp_operatore{
+	height: 400px;
+	background-color: #CCCCCC;
+	color: #333333;
+	width: 750px;
+	margin-top: 80px;
+	margin-left: 220px;
+	font-family: Akkurat;
+	font-size: 1.5em;
+	padding: 10px 0px 0px 10px;
+	position: absolute;
+	z-index: 1;
+	border-radius: 20px;
+}
+
+.contenitore_header_pp_operatore span {
+	font-family: Akkurat Light Pro;
+}
+
+.contenitore_header_pp_operatore i {
+	margin-bottom: 10px;
+	padding-top: 10px;
+}
+
+.titolo_contenuti_sinistra_pp_operatore {
+	width:400px;
+	border-top: 2px solid #666666;
+	margin-top: 5px;
+	padding-top: 5px;
+	margin-bottom: 5px;
+}
+/*---------------------------------FINE CONTENITORE HEADER OPERAATORE----------------------*/
+.contenitore_sfondo_pp {
+	background: radial-gradient(#666666 , #333333);
+	opacity: 0.9;
+	height: 660px;
+	margin: 0;
+	padding: 0;	
+}
+
+.titolo_contenuti_sinistra_pp {
+	width: 250px;
+	border-top: 2px solid #666666;
+	margin-top: 5px;
+	padding-top: 5px;
+	margin-bottom: 5px;
+}
+
+.contenuti_sinistra_pp {
+	width: 250px;
+	height: 230px;
+	background-color: white;
+	float: left;
+}
+
+.contenuti_sinistra_pp p {
+font-family: Akkurat Light Pro;
+	margin-top: 0px;
+	padding: 5px 0px 0px 5px;
+	margin: 0;
+}
+
+.contenuti_sinistra_pp p:hover {
+	background-color: blue;
+	color: white;
+}
+
+.contenuti_sinistra_pp_selezione_campagne {
+	overflow: auto;
+	width: 250px;
+	height: 190px;
+	background-color: white;
+	float: left;
+}
+
+.contenuti_sinistra_pp_selezione_campagne p {
+font-family: Akkurat Light Pro;
+	margin-top: 0px;
+	padding: 5px 0px 0px 5px;
+	margin: 0;
+}
+
+.contenuti_sinistra_pp_selezione_campagne p:hover {
+	background-color: blue;
+	color: white;
+}
+
+/*--------------------------------CONTENUTI SINISTRA OPERATORE--------------------------*/
+
+
+.contenuti_sinistra_pp_operatore {
+	width: 350px;
+	height: 230px;
+	background-color: white;
+	float: left;
+}
+
+.contenuti_sinistra_pp_operatore p {
+font-family: Akkurat Light Pro;
+	margin-top: 0px;
+	padding: 5px 0px 0px 5px;
+	margin: 0;
+}
+
+.contenuti_sinistra_pp_operatore p:hover {
+	background-color: blue;
+	color: white;
+}
+
+
+
+.contenuti_sinistra_pp_contatti_operatore {
+	overflow: auto;
+	width: 350px;
+	height: 230px;
+	background-color: white;
+	float: left;
+}
+
+.contenuti_sinistra_pp_contatti_operatore p {
+font-family: Akkurat Light Pro;
+	margin-top: 0px;
+	padding: 5px 0px 0px 5px;
+	margin: 0;
+}
+
+.contenuti_sinistra_pp_contatti_operatore p:hover {
+	background-color: blue;
+	color: white;
+}
+
+
+/*--------------------------------FINE CONTENUTI SINISTRA OPERATORE--------------------------*/
+
+/*--------------------------------CONTENUTI SINISTRA CAMPAGNA---------------------------------*/
+.contenuti_sinistra_pp_campagna {
+	width: 350px;
+	height: 230px;
+	background-color: white;
+	float: left;
+}
+
+.contenuti_sinistra_pp_campagna p {
+font-family: Akkurat Light Pro;
+font-size: 15px;
+	margin-top: 0px;
+	padding: 5px 0px 0px 5px;
+	margin: 0;
+}
+
+.contenuti_sinistra_pp_campagna p:hover {
+	background-color: blue;
+	color: white;
+}
+/*--------------------------------FINE CONTENUTI SINISTRA CAMPAGNA----------------------------*/
+
+.contenuti_destra_pp_operatore p{
+	width: 350px;
+	height: 130px;
+	background-color: white;
+	float: left;
+	margin-left: 30px;
+	padding: 0;
+	margin-top: 0;
+	font-family: Akkurat Light Pro;
+}
+
+.contenuti_destra_pp_contatti_operatore {
+	overflow: auto;
+	width: 350px;
+	height: 230px;
+	background-color: white;
+	float: left;
+	margin-left: 30px;
+	padding: 0;
+	margin-top: 0;
+	font-size: 25px;
+	font-family: Akkurat Light Pro;
+	color: darkgrey;
+}
+
+.contenuti_destra_pp_contatti_operatore p{
+	margin:0;
+}
+
+.titolo_contenuti_destra_pp {
+	margin-top: -40px;
+	width: 360px;
+	border-top: 2px solid #666666;
+	padding-top: 5px;
+	padding-left: 30px;
+	margin-bottom: 0px;
+	float: left;
+}
+
+.contenuti_destra_pp input {
+	padding-top: 0;
+	float: left;
+	margin-left: 30px;
+	width: 350px;
+	height: 25px;
+	font-size: 1em;
+	font-family: Akkurat Light Pro;
+}
+
+.numero_chiamate_operatore {
+	padding-top: 0;
+	float: left;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	width: 350px;
+}
+
+form[name="inserimento_azienda"] {
+	padding-top: 0;
+	float: left;
+	margin-top: 10px;
+	margin-left: 30px;
+	width: 350px;
+	height: 25px;
+	font-size: 1em;
+	font-family: Akkurat;
+}
+
+form[name="inserimento_cognome"] {
+	padding-top: 0;
+	float: left;
+	margin-top: 10px;
+	margin-left: 0px;
+	width: 200px;
+	height: 25px;
+	font-size: 1em;
+	font-family: Akkurat;
+}
+
+form[name="inserimento_data_nascita"] {
+	padding: 0;
+	float: left;
+	margin-top: 50px;
+	margin-left: 0px;
+	width: 250px;
+	height: 25px;
+	font-size: 1em;
+	font-family: Akkurat;
+}
+
+label[for="inserimento_data_nascita"] {
+	margin-left: 0px;
+}
+
+form[name="selezione_operatori"] {
+	padding-top: 0;
+	float: left;
+	margin-top: 50px;
+	margin-left: 0px;
+	width: 350px;
+	height: 25px;
+	font-size: 1em;
+	font-family: Akkurat;
+}
+
+label[for="selezione_operatori"] {
+	margin-left: 30px;
+}
+
+input[name="inserimento_azienda"] {
+	margin: 0;
+}
+/*------------------------------BOTTONI -------------------------*/
+
+button[name="annulla"] {
+	background-color:red;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid red;
+	float: bottom;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Akkurat;
+	font-size:17px;
+	padding:6px 3px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	margin-top: 180px;
+	margin-right: 40px;
+	margin-left: -140px;
+}
+button[name="annulla"]:hover {
+	background-color:darkred;
+}
+button[name="annulla"]:active {
+	position:relative;
+	top:1px;
+}
+
+button[name="avanti"] {
+	background-color:#44c767;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #18ab29;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Akkurat;
+	font-size:17px;
+	padding:6px 3px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	margin-left: 40px;
+}
+button[name="avanti"]:hover {
+	background-color:darkgreen;
+}
+
+button[name="avanti"]:active {
+	position:relative;
+	top:1px;
+}
+/*--------------------BOTTONI CAMPAGNA------------------------*/
+
+button[name="annulla_campagna"] {
+	background-color:red;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid red;
+	float: bottom;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Akkurat;
+	font-size:17px;
+	padding:6px 3px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	margin-top: 120px;
+	margin-right: 40px;
+	margin-left: -140px;
+}
+
+button[name="annulla_campagna"]:hover {
+	background-color:darkred;
+}
+button[name="annulla_campagna"]:active {
+	position:relative;
+	top:1px;
+}
+
+button[name="avanti_campagna"] {
+	background-color:#44c767;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #18ab29;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Akkurat;
+	font-size:17px;
+	padding:6px 3px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	margin-left: 40px;
+}
+
+button[name="avanti_campagna"]:hover {
+	background-color:darkgreen;
+}
+
+button[name="avanti_campagna"]:active {
+	position:relative;
+	top:1px;
+}
+
+input[name="inserimento_operatori"] {
+	margin: 0;
+	float: right;
+}
+
+/*---------------------------------------------BOTTONI OPERATORE----------------*/
+
+button[name="annulla_operatore"] {
+	background-color:red;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid red;
+	float: bottom;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Akkurat;
+	font-size:17px;
+	padding:6px 3px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	margin-top: 0px;
+	margin-right: 40px;
+	/*margin-left: -430px;*/
+
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+button[name="annulla_operatore"]:hover {
+	background-color:darkred;
+}
+button[name="annulla_operatore"]:active {
+	position:relative;
+	top:1px;
+}
+
+button[name="stampa_report_operatore"] {
+	background-color:#44c767;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #18ab29;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Akkurat;
+	font-size:17px;
+	padding:6px 3px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	margin-left: 60px;
+}
+
+button[name="stampa_report_operatore"]:hover {
+	background-color:darkgreen;
+}
+
+button[name="stampa_report_operatore"]:active {
+	position:relative;
+	top:1px;
+}
+/*------------------------------------------BOTTONI ASSEGNA CONTATTI-------------------------*/
+button[name="annulla_contatti"] {
+	background-color:red;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid red;
+	float: bottom;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Akkurat;
+	font-size:17px;
+	padding:6px 3px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	margin-top: 10px;
+	margin-right: 40px;
+	/*margin-left: -430px;*/
+
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+button[name="annulla_contatti"]:hover {
+	background-color:darkred;
+}
+button[name="annulla_contatti"]:active {
+	position:relative;
+	top:1px;
+}
+
+button[name="assegna_contatti"] {
+	background-color:#44c767;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #18ab29;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Akkurat;
+	font-size:17px;
+	padding:6px 3px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	margin-left: 60px;
+}
+
+button[name="assegna_contatti"]:hover {
+	background-color:darkgreen;
+}
+
+button[name="assegna_contatti"]:active {
+	position:relative;
+	top:1px;
+}
+/*------------------------------------------FINE BOTTONI ASSEGNA CONTATTI--------------------*/
+
+button[name="annulla_report"] {
+	background-color:red;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid red;
+	float: bottom;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Akkurat;
+	font-size:17px;
+	padding:6px 3px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	margin-top: 200px;
+	margin-left: -240px;
+	/*margin-left: -430px;*/
+
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+button[name="annulla_report"]:hover {
+	background-color:darkred;
+}
+button[name="annulla_report"]:active {
+	position:relative;
+	top:1px;
+}
+/*-------------------------------------------BOTTONE LOGIN --------------------*/
+input.send_login {
+	background-color:#44c767;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #18ab29;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Akkurat;
+	font-size:17px;
+	padding:6px 3px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	margin-left: 30%;
+	margin-top: 7%;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+input.send_login:hover {
+	background-color:darkgreen;
+}
+
+input.send_login:active {
+	position:relative;
+	top:1px;
+}
+
+#username, #password {
+	padding-top: 0;
+	float: left;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	margin-top:15px;
+	width: 95%;
+	height: 25px;
+	
+}
+
+label[for="form_username"], label[for="form_password"]{
+	margin-left: 0px;
+	margin-bottom: 0;
+	font-size: 20px;
+	font-family: Akkurat;
+}
+h6 {margin:0; padding:0;}
+/*-------------------------------------------------FINE PAGINE PICCOLE-----------------------------*/
+
+.hidden {display: none;}
+
+#tendina {position: fixed;
+	top:0;
+	left:0;
+z-index: 32;
+}
+
+#overlay {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 31;
+	top: 0;
+	left: 0;
+	background-color: black;
+	opacity: 0.8;
+	display: none;
+}
+
+.flash-notice {
+	background-color: #FFFFFF;
+	padding: 30px;
+	border-color: #CCCCCC;
+	font-family:Akkurat;
+	text-align: center;
+}
+
+
+

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="{{ asset('img/favicon.ico') }}" rel="icon" type="image/ico">
+<meta charset = "UTF-8">		
+<title>CS Crm</title>
+<link href="">
+<link href="{{ asset('css/style_Project_Work.css') }}" rel="stylesheet" type="text/css" charset="utf-8"/>
+<link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet" type="text/css">
+	</head>
+	<body class="body">
+
+		
+		<header class="contenitore_header cf">
+		<p class = "logo"> <a href="operatore_index.html"><img src= "assets/icons/logo_bianco.png" width="100" height="40"></a></p>
+			<div class="header_info">
+				<p class = "admin"><span class="scrittaAdmin">Operatore:</span>{{ app.user.nome }}</p>
+				<p class = "dataEora">LUN 01/10/2015 - 16:33.05</p>
+			</div>
+		
+			<div class="contenitore_logout">
+				<p class = "logout"><a href="http://localhost/PROJECTWORK/------------.html">Logout</p>
+				<i class="fa fa-sign-out fa-1x"></a></i>
+			</div>
+		</header>
+
+
+	<div class="contenitore_breadcrumb">
+	<i>Home / Campagne / Vodafone Christmas</i>
+	</div>
+
+
+
+		<nav class="contenitore_menu">
+			<p class="home"><a href="operatore_index.html">HOME</a></p>
+			<!--<p class="aziende"><a href="http://localhost/PROJECTWORK/Admin_aziende.html">AZIENDE</a></p>
+			<p class="contatti"><a href="http://localhost/PROJECTWORK/-----------.html">CONTATTI</a></p>-->
+			<p class="campagne"><a href="Operatori_campagne_attive.html">CAMPAGNE ATTIVE</a></p>
+<!--			<p class="operatori"><a href="http://localhost/PROJECTWORK/Admin_operatori.html">OPERATORI</a></p>
+			<p class="report"><a href="http://localhost/PROJECTWORK/----------.html">REPORT</a></p> -->
+			<p class="campagne"><a href="Operatori_campagne_PASSATE.html">CAMPAGNE CONCLUSE</a></p>
+		</nav>
+
+		<aside class="contenitore_principale cf">
+				<div class="titolo_contenuti">Vodafone Christmas
+<!--					<a href="http://localhost/PROJECTWORK/Nuova_campagna_1.html"><nav class="aggiungi_elemento">Aggiungi nuova campagna</nav></a> -->
+				</div>
+					<div class="informazioni_operatori_campagne cf">
+						<div class="profilo_operatori_campagne">Contatti</div>  
+						<div class="assegna_contatti_operatore_campagne"></div>
+<!--						<div class="pausa_operatori_campagne">Impostazioni</div>
+						<div class="rimuovi_operatori_campagne">Rimuovi</div>  -->
+					</div>	
+					<nav class="contenitore_elenco_operatori">
+						
+						<div class="tendina_1_operatore cf">
+							<div class="icona_tendina"><img src= "assets/icons/icona_verde.png" width="40" height="40"></div> 							
+								<div class="nomeEcognome"><i>Piero</br>Gialli</i></div>
+								
+										<div class="contenitore_icone"><b>Chiamato il 28/09/2015</b>
+	<!--									<div class="icona_rimuovere"><a href="------------"><i class="fa fa-trash-o fa-1x"></i></a></div>
+										<div class="icona_pausa"><a href="------------"><i class="fa fa-wrench fa-1x"></i></a></div>
+										<div class="icona_assegna_contatti"><a href="--------------"><i class=""></i></a></div> -->
+										</div>
+								
+
+						</div>
+
+						<div class="tendina_1_operatore cf">
+									<div class="icona_tendina"><img src= "assets/icons/icona_verde.png" width="40" height="40"></div> 
+								<div class="nomeEcognome"><i>Gina</br>Rossi</i></div>
+								
+									
+										<div class="contenitore_icone"><b>Chiamato il 28/09/2015</b>
+<!--										<div class="icona_rimuovere"><a href="------------"><i class="fa fa-trash-o fa-1x"></i></a></div>
+										<div class="icona_pausa"><a href="------------"><i class="fa fa-wrench fa-1x"></i></a></div>
+										<div class="icona_assegna_contatti"><a href="--------------"><i class=""></i></a></div> -->
+										</div>
+						
+
+						</div>
+
+
+						<div class="tendina_1_operatore cf">
+									<div class="icona_tendina"><img src= "assets/icons/icona_rossa.png" width="40" height="40"></div> 
+								<div class="nomeEcognome"><i>Andrea</br>Azzurri</i></div>
+								
+									
+										<div class="contenitore_icone"><b>Contatto non valido</b>
+	<!--									<div class="icona_rimuovere"><a href="------------"><i class="fa fa-trash-o fa-1x"></i></a></div>
+										<div class="icona_pausa"><a href="------------"><i class="fa fa-wrench fa-1x"></i></a></div>
+										<div class="icona_assegna_contatti"><a href="--------------"><i class=""></i></a></div> -->
+										</div>
+								
+
+						</div>
+
+
+						<div class="tendina_1_operatore cf">
+								<div class="icona_tendina"><img src= "assets/icons/icona_verde.png" width="40" height="40"></div> 
+								<div class="nomeEcognome"><i>Carlo</br>Bianchi</i></div>
+								
+								
+										<div class="contenitore_icone"><b>Chiamato il 29/09/2015</b>
+<!--										<div class="icona_rimuovere"><a href="------------"><i class="fa fa-trash-o fa-1x"></i></a></div>
+										<div class="icona_pausa"><a href="------------"><i class="fa fa-wrench fa-1x"></i></a></div>
+										<div class="icona_assegna_contatti"><a href="--------------"><i class=""></i></a></div> -->
+										</div>
+								
+
+						</div>
+
+
+						<div class="tendina_1_operatore cf">
+									<div class="icona_tendina"><img src= "assets/icons/icona_gialla.png" width="40" height="40"></div> 
+								<div class="nomeEcognome"><i>Cecilia</br>Violi</i></div>
+								
+									
+										<div class="contenitore_icone"><b>Da chiamare il: 01/10/2015 </b><i class="fa fa-calendar fa-11x"></i>
+	<!--									<div class="icona_rimuovere"><a href="------------"><i class="fa fa-trash-o fa-1x"></i></a></div>
+										<div class="icona_pausa"><a href="------------"><i class="fa fa-wrench fa-1x"></i></a></div>
+										<div class="icona_assegna_contatti"><a href="--------------"><i class=""></i></a></div> -->
+										</div>
+								
+
+						</div>
+
+
+						<div class="tendina_1_operatore cf">
+								<div class="icona_tendina"><img src= "assets/icons/icona_gialla.png" width="40" height="40"></div> 
+								<div class="nomeEcognome"><i>Julie</br>De Gaulle</i></div>
+								
+								
+										<div class="contenitore_icone"><b>Da chiamare</b>
+	<!--									<div class="icona_rimuovere"><a href="------------"><i class="fa fa-trash-o fa-1x"></i></a></div>
+										<div class="icona_pausa"><a href="------------"><i class="fa fa-wrench fa-1x"></i></a></div>
+										<div class="icona_assegna_contatti"><a href="--------------"><i class=""></i></a></div> -->
+										</div>
+								
+
+						</div>
+
+
+						<div class="tendina_1_operatore cf">
+								<div class="icona_tendina"><img src= "assets/icons/icona_gialla.png" width="40" height="40"></div> 
+								<div class="nomeEcognome"><i>Lucia</br>Pini</i></div>
+								
+										<div class="contenitore_icone"><b>Da chiamare</b>
+<!--										<div class="icona_rimuovere"><a href="------------"><i class="fa fa-trash-o fa-1x"></i></a></div>
+										<div class="icona_pausa"><a href="------------"><i class="fa fa-wrench fa-1x"></i></a></div>
+										<div class="icona_assegna_contatti"><a href="--------------"><i class=""></i></a></div> -->
+										</div>
+								
+
+						</div>
+
+					</nav>
+					
+		</aside>
+
+
+<div class="contenitore_sfondo cf">
+
+</div>
+
+
+<!--INSERIRE JQUERY per FAR FUNZIONARE LO SCRIPT-->
+<script type="text/javascript">
+$('#logo').parents('test').css('background-color', 'red');
+</script>
+	</body>
+</html>

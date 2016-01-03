@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="{{ asset('img/favicon.ico') }}" rel="icon" type="image/ico">
+<meta charset = "UTF-8">		
+<title>CS Crm</title>
+<link href="">
+<link href="{{ asset('css/style_Project_Work.css') }}" rel="stylesheet" type="text/css" charset="utf-8"/>
+<link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet" type="text/css">
+	</head>
+	<body class="body">
+
+	
+		
+		<div class="contenitore_header_pp cf">
+			<span><i>Creazione nuova Campagna:</i></span> <i>IMPORTA CONTATTI</i>
+			<div class="titolo_contenuti_sinistra_pp">Lead di riferimento</div>
+				<div class="contenuti_sinistra_pp">
+				<p class="Lead"><input type="checkbox"/>Lead 1 MailUP</p>
+				<p class="Lead"><input type="checkbox"/>Lead 2 MailUP</p>
+				<p class="Lead"><input type="checkbox"/>Lead 3 MailUP</p>
+				</div>
+
+			<div class="titolo_contenuti_destra_pp">Titolo Campagna</div>
+				<div class="contenuti_destra_pp">
+					<form name="inserimento_campagna" method="POST" action="add_campagna.php">
+					<label></label>
+					<input type="text" name="inserimento_campagna" placeholder="inserire titolo campagna"/>
+					</form></br>
+
+					<form name="inserimento_azienda" method="POST" action="add_azienda.php">
+					<label for="inserimento_azienda">Nome Azienda</label>
+					<input type="text" name="inserimento_azienda" placeholder="inserire nome azienda"/>
+					</form></br>	
+
+					<form name="selezione_operatori" method="POST" action="add_operatore.php">
+					<label for="selezione_operatori">Scegli operatori</label>
+					<input type="text" name="selezione_operatori" placeholder="clicca per scegliere operatori"/>
+					</form>
+
+				</div>
+
+				<a href="Admin_campagne.html"><button type="submit" name="annulla_campagna" value="annulla">_____annulla______</button></a>
+				<a href="Admin_campagne.html"><button type="submit" name="avanti_campagna" value="avanti">___CREA CAMPAGNA___</button></a>
+		</div>
+
+
+
+<div class="contenitore_sfondo_pp">	
+
+
+
+</div>
+
+
+<!--INSERIRE JQUERY per FAR FUNZIONARE LO SCRIPT-->
+	</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="{{ asset('img/favicon.ico') }}" rel="icon" type="image/ico">
+<meta charset = "UTF-8">		
+<title>CS Crm</title>
+<link href="">
+<link href="{{ asset('css/style_Project_Work.css') }}" rel="stylesheet" type="text/css" charset="utf-8"/>
+<link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet" type="text/css">
+	</head>
+	<body class="body">
+
+	
+		
+		<div class="contenitore_header_pp cf">
+			<span><i>Creazione nuovo Operatore:</i></span> <i>INSERISCI DATI</i>
+			<div class="titolo_contenuti_sinistra_pp">Anagrafica e contatti</div>
+				<div class="contenuti_sinistra_pp">
+				<form name="inserimento_campagna" method="POST" action="add_campagna.php">
+					<label for="inserimento_azienda">Nome</br></label>
+					<input type="text" name="inserimento_campagna" placeholder="nome operatore"/>
+					</form>
+
+					<form name="inserimento_cognome" method="POST" action="add_azienda.php">
+					<label for="inserimento_cognome">Cognome</br></label>
+					<input type="text" name="inserimento_azienda" placeholder="cognome operatore"/>
+					</form></br>	
+
+					<form name="inserimento_data_nascita" method="POST" action="add_operatore.php">
+					<label for="inserimento_data_nascita">Data di nascita</label>
+					<input type="text" name="selezione_operatori" placeholder="gg/mm/aaaa"/>
+					</form>
+				</div>
+
+			<div class="titolo_contenuti_destra_pp">ID</div>
+				<div class="contenuti_destra_pp">
+					<form name="inserimento_campagna" method="POST" action="add_campagna.php">
+					<label for="inserimento_azienda"></label>
+					<input type="text" name="inserimento_campagna" placeholder="genera ID"/>
+					</form></br>
+
+					<form name="inserimento_azienda" method="POST" action="add_azienda.php">
+					<label for="inserimento_azienda">eMail</label>
+					<input type="text" name="inserimento_azienda" placeholder="email operatore"/>
+					</form></br>	
+
+					<form name="selezione_operatori" method="POST" action="add_operatore.php">
+					<label for="selezione_operatori">telefono</label>
+					<input type="text" name="selezione_operatori" placeholder="telefono operatore"/>
+					</form>
+
+				</div>
+
+				<a href="Admin_campagne.html"><button type="submit" name="annulla_campagna" value="annulla">_____annulla______</button></a>
+				<a href="Admin_campagne.html"><button type="submit" name="avanti_campagna" value="avanti">___CREA OPERATORE___</button></a>
+		</div>
+
+
+
+<div class="contenitore_sfondo_pp">	
+
+
+
+</div>
+
+
+<!--INSERIRE JQUERY per FAR FUNZIONARE LO SCRIPT-->
+	</body>
+</html>

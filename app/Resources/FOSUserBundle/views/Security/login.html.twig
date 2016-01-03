@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="/assets/icons/favicon.ico" rel="icon" type="image/ico">
+<meta charset = "UTF-8">		
+<title>CS Crm</title>
+
+<link href="{{ asset('css/style_Project_Work.css') }}" rel="stylesheet" type="text/css" charset="utf-8"/>
+<link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet" type="text/css">
+	</head>
+	<body class="body">
+
+		
+		<div class="contenitore_header_login cf">
+			<b>CS Crm - LOGIN</b>
+					<div class="contenuti_login">
+
+							{% if error %}
+							    <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+							{% endif %}
+
+							<form action="{{ path("fos_user_security_check") }}" method="post">
+							    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+
+							    <label for="username"></label>
+							    <input type="text" id="username" name="_username" value="{{ last_username }}" placeholder="{{ 'inserisci username'|trans }}" required="required" />
+
+							    <label for="password"></label>
+							    <input type="password" id="password" name="_password" placeholder="{{ 'inserisci password'|trans }}" required="required" />
+
+							    <input class="send_login" type="submit" id="_submit" name="_submit" value="{{ 'login'|trans|upper }}" />
+							</form>
+							
+
+
+							</div>
+					{% for flash_message in app.session.flashbag.get('notice') %}
+						<div class='flash-notice'>
+							{{ flash_message|upper }}
+						</div class='flash-notice'>
+					{% endfor %}
+
+									
+				<!--
+				<a href="/PROJECTWORK/Admin_campagne.html"><button type="submit" name="annulla_campagna" value="annulla">_____annulla______</button></a>-->
+				<!--<a href="/PROJECTWORK/Admin_index.html"><button type="submit" name="login" value="avanti">LOGIN</button></a>
+		--></div>
+
+
+
+
+<div class="contenitore_sfondo_pp">	
+
+
+</div>
+
+
+<!--INSERIRE JQUERY per FAR FUNZIONARE LO SCRIPT-->
+	</body>
+</html>

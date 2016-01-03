@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="{{ asset('img/favicon.ico') }}" rel="icon" type="image/ico">
+<meta charset = "UTF-8">		
+<title>CS Crm</title>
+<link href="">
+<link href="{{ asset('css/style_Project_Work.css') }}" rel="stylesheet" type="text/css" charset="utf-8"/>
+<link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet" type="text/css">
+	</head>
+	<body class="body">
+
+	
+		
+		<div class="contenitore_header_pp_operatore cf">
+			<span><i class="fa fa-user fa-11x"></i><i>Profilo Operatore:</i></span><i>{{ app.user.nome }}</i>
+			<div class="titolo_contenuti_sinistra_pp_operatore">Info</div>
+				<div class="contenuti_sinistra_pp_operatore">
+				<div><p class="id"><b>ID:</b><span class="valoreId">  #011</span></p></div>
+				<div><p class="email"><b>eMail:</b><span class="valoreEmail">  arm.lest@libero.it</span></p></div>
+				<div><p class="telefono:"><b>telefono:</b><span class="valoreTelefono">  0438 782178</span></p></div>
+				</div>
+
+			<div class="titolo_contenuti_destra_pp">Lista Campagne Attive</div>
+				<div class="contenuti_destra_pp_operatore">
+					<p>Campagna1</br>Campagna2</br></p>
+				</div>
+					<div class="numero_chiamate_operatore">
+					Numero chiamate giornaliere:</br><span><b>43</b></span>
+					</div>
+
+				
+
+				<a href="Admin_operatori.html"><button type="submit" name="annulla_operatore" value="annulla">ritorna</button></a>
+				<a href="Admin_operatori.html"><button type="submit" name="stampa_report_operatore" value="avanti">stampa report</button></a>
+		</div>
+
+
+
+<div class="contenitore_sfondo_pp">
+
+
+
+</div>
+
+
+<!--INSERIRE JQUERY per FAR FUNZIONARE LO SCRIPT-->
+	</body>
+</html>
