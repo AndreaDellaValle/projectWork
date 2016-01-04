@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="{{ asset('img/favicon.ico') }}" rel="icon" type="image/ico">
+<meta charset = "UTF-8">		
+<title>CS Crm</title>
+<link href="">
+<link href="{{ asset('css/style_Project_Work2.css') }}" rel="stylesheet" type="text/css" charset="utf-8"/>
+<link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet" type="text/css">
+	</head>
+	<body class="body" onload="startTime()">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+
+		
+			{% block header %}
+				{% include 'AppBundle::header.html.twig' %}
+			{% endblock %}
+		
+
+
+	<div class="contenitore_breadcrumb">
+	<i>breadcrums</i>
+	</div>
+
+
+
+		<div class="contenitore_menu">
+			{% block menu %}
+				{% include 'AppBundle::menu.html.twig' %}
+			{% endblock %}
+		</div>
+
+		<div class="contenitore_principale cf">
+			{% block contenuti %}
+				{% include 'AppBundle::contenuti.html.twig' %}
+			{% endblock %}
+		</div>
+
+<div class="contenitore_sfondo cf">
+
+</div>
+
+
+<!--INSERIRE JQUERY per FAR FUNZIONARE LO SCRIPT-->
+<!--<script type="text/javascript">
+var d = new Date();
+document.getElementById("dataEora").innerHTML = d.toString();
+</script>-->
+
+<script type="text/javascript">
+$('.apriFinestraDettagliCampagna').on('click', function(evt){
+	evt.preventDefault();
+	$('#tendina').removeClass('hidden');
+	$('.body').
+});
+</script>
+	</body>
+</html>

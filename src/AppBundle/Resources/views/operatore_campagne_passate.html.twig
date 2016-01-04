@@ -1,35 +1,6 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<link href="{{ asset('img/favicon.ico') }}" rel="icon" type="image/ico">
-<meta charset = "UTF-8">		
-<title>CS Crm</title>
-<link href="">
-<link href="{{ asset('css/style_Project_Work2.css') }}" rel="stylesheet" type="text/css" charset="utf-8"/>
-<link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet" type="text/css">
-	</head>
-	<body class="body">
+{% extends "AppBundle::layout_operatori.html.twig" %}
 
-		
-		<header class="contenitore_header cf">
-		<p class = "logo"> <a href="operatore_index.html"><img src= "{{ asset ('img/logo_bianco.png') }}" width="100" height="40"></a></p>
-			<div class="header_info">
-				<p class = "admin"><span class="scrittaAdmin">Operatore:</span> {{ app.user.nome }}</p>
-				<p class = "dataEora">LUN 01/10/2015 - 16:33.05</p>
-			</div>
-		
-			<div class="contenitore_logout">
-				<p class = "logout"><a href="http://localhost/PROJECTWORK/------------.html">Logout</p>
-				<i class="fa fa-sign-out fa-1x"></a></i>
-			</div>
-		</header>
-
-
-	<div class="contenitore_breadcrumb">
-	<i>Campagne / Campagne concluse</i>
-	</div>
-
-
+{% block menu %}
 
 		<nav class="contenitore_menu">
 			<p class="home"><a href="operatore_index">HOME</a></p>
@@ -41,6 +12,10 @@
 			<p class="campagne"><a href="operatore_campagne_passate">CAMPAGNE CONCLUSE</a></p>
 		</nav>
 
+{% endblock %}
+{% block contenuti %}
+				
+			
 		<aside class="contenitore_principale cf">
 				<div class="titolo_contenuti">Campagne concluse</div>
 					<div class="informazioni_operatori_campagne cf">
@@ -148,16 +123,4 @@
 				</nav>
 					
 		</aside>
-
-
-<div class="contenitore_sfondo cf">
-
-</div>
-
-
-<!--INSERIRE JQUERY per FAR FUNZIONARE LO SCRIPT-->
-<script type="text/javascript">
-$('#logo').parents('test').css('background-color', 'red');
-</script>
-	</body>
-</html>
+		{% endblock %}
