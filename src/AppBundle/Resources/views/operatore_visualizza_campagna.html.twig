@@ -87,7 +87,7 @@
 							</div>
 						</a>
 
-						<a href="dettagli_contatto">
+							<a href="dettagli_contatto">
 							<div class="tendina_1_operatore cf">
 								<div class="icona_tendina"><i class="fa fa-flag fa-11x"></i></div>
 								<div class="nomeEcognome"><i>NomeCampagna</br>NomeAzienda</i></div>
@@ -103,16 +103,20 @@
 
 							</div>
 						</a>
+						
 					</nav>
 
-					<div class="hidden">CIAO MAMMA</div>
+					<a class="popup" href="#">javascript</a>
+					<div class="overlay hidden">CIAO MAMMA</div>
+          			<div class="overlayContent hidden">
+          			DIO PORCONE !!!
+         			</div>
 					
 		<!--</aside>-->
 <script type="text/javascript">
-$('a.dettagli_contatto').on('click', function(evt){
+$('a.popup').click(function(evt){
 	evt.preventDefault();
-	$('#tendina').removeClass('hidden');
-	$('.body').
+	$('.overlay , .overlayContent').removeClass('hidden');
 });
 </script>
 {% endblock %}
