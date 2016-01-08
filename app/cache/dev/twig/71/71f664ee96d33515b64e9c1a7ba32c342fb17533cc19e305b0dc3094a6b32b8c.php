@@ -22,20 +22,20 @@ class __TwigTemplate_b8b29a150d3e2b70648d0db1a8e29589aa8b3a2fa486e42ca4e62a50aa7
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_9f0ef9b8d9c43b531c14605e8be14893bfc0b2977edc47d3f4d08007f4189882 = $this->env->getExtension("native_profiler");
-        $__internal_9f0ef9b8d9c43b531c14605e8be14893bfc0b2977edc47d3f4d08007f4189882->enter($__internal_9f0ef9b8d9c43b531c14605e8be14893bfc0b2977edc47d3f4d08007f4189882_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle::operatore_campagne_passate.html.twig"));
+        $__internal_0975a6a3ad5d69fdea4a4538b0cef746f3d5a4a3e5e55a3c926cb3fee45e3620 = $this->env->getExtension("native_profiler");
+        $__internal_0975a6a3ad5d69fdea4a4538b0cef746f3d5a4a3e5e55a3c926cb3fee45e3620->enter($__internal_0975a6a3ad5d69fdea4a4538b0cef746f3d5a4a3e5e55a3c926cb3fee45e3620_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle::operatore_campagne_passate.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_9f0ef9b8d9c43b531c14605e8be14893bfc0b2977edc47d3f4d08007f4189882->leave($__internal_9f0ef9b8d9c43b531c14605e8be14893bfc0b2977edc47d3f4d08007f4189882_prof);
+        $__internal_0975a6a3ad5d69fdea4a4538b0cef746f3d5a4a3e5e55a3c926cb3fee45e3620->leave($__internal_0975a6a3ad5d69fdea4a4538b0cef746f3d5a4a3e5e55a3c926cb3fee45e3620_prof);
 
     }
 
     // line 3
     public function block_menu($context, array $blocks = array())
     {
-        $__internal_67ebc89c6d2a85506166b212d6d095c0faf363b9dcb05aa6cb714001dac702c4 = $this->env->getExtension("native_profiler");
-        $__internal_67ebc89c6d2a85506166b212d6d095c0faf363b9dcb05aa6cb714001dac702c4->enter($__internal_67ebc89c6d2a85506166b212d6d095c0faf363b9dcb05aa6cb714001dac702c4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "menu"));
+        $__internal_f32e67741b2f418b37fc4c87b50c7af8b655f73f0c49fd7d6b67d19b4d1c331f = $this->env->getExtension("native_profiler");
+        $__internal_f32e67741b2f418b37fc4c87b50c7af8b655f73f0c49fd7d6b67d19b4d1c331f->enter($__internal_f32e67741b2f418b37fc4c87b50c7af8b655f73f0c49fd7d6b67d19b4d1c331f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "menu"));
 
         // line 4
         echo "
@@ -51,20 +51,20 @@ class __TwigTemplate_b8b29a150d3e2b70648d0db1a8e29589aa8b3a2fa486e42ca4e62a50aa7
 
 ";
         
-        $__internal_67ebc89c6d2a85506166b212d6d095c0faf363b9dcb05aa6cb714001dac702c4->leave($__internal_67ebc89c6d2a85506166b212d6d095c0faf363b9dcb05aa6cb714001dac702c4_prof);
+        $__internal_f32e67741b2f418b37fc4c87b50c7af8b655f73f0c49fd7d6b67d19b4d1c331f->leave($__internal_f32e67741b2f418b37fc4c87b50c7af8b655f73f0c49fd7d6b67d19b4d1c331f_prof);
 
     }
 
     // line 16
     public function block_contenuti($context, array $blocks = array())
     {
-        $__internal_7f08f3ad7ef3fae3e6838ae89ba840103ffcdc2967a5088f600df3ec8b83b8bd = $this->env->getExtension("native_profiler");
-        $__internal_7f08f3ad7ef3fae3e6838ae89ba840103ffcdc2967a5088f600df3ec8b83b8bd->enter($__internal_7f08f3ad7ef3fae3e6838ae89ba840103ffcdc2967a5088f600df3ec8b83b8bd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "contenuti"));
+        $__internal_54d9b40adfa88a8f01d5d5ef7b8299f321d2a61ff5208de8784c8ed4fb148021 = $this->env->getExtension("native_profiler");
+        $__internal_54d9b40adfa88a8f01d5d5ef7b8299f321d2a61ff5208de8784c8ed4fb148021->enter($__internal_54d9b40adfa88a8f01d5d5ef7b8299f321d2a61ff5208de8784c8ed4fb148021_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "contenuti"));
 
         // line 17
         echo "\t\t\t\t
 \t\t\t
-\t\t<aside class=\"contenitore_principale cf\">
+\t\t
 \t\t\t\t<div class=\"titolo_contenuti\">Campagne concluse</div>
 \t\t\t\t\t<div class=\"informazioni_operatori_campagne cf\">
 \t\t\t\t\t\t<div class=\"profilo_operatori_campagne\">Campagna</div>  
@@ -72,108 +72,82 @@ class __TwigTemplate_b8b29a150d3e2b70648d0db1a8e29589aa8b3a2fa486e42ca4e62a50aa7
 \t\t\t\t\t</div>\t
 \t\t\t\t<nav class=\"contenitore_elenco_operatori\">
 \t\t\t\t\t\t
+\t\t\t\t\t\t<a href=\"operatore_visualizza_campagna\">
 \t\t\t\t\t\t<div class=\"tendina_1_operatore cf\">
-\t\t\t\t\t\t\t\t<div class=\"icona_tendina\"><a href=\"indirizzo pagina profilo\"><i class=\"fa fa-flag fa-11x\"></i></a></div>
+\t\t\t\t\t\t\t\t<div class=\"icona_tendina\"><i class=\"fa fa-flag fa-11x\"></i></div>
 \t\t\t\t\t\t\t\t<div class=\"nomeEcognome\"><i>Campagna</br>Azienda</i></div>
 \t\t\t\t\t\t\t\t<div>
 \t\t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t\t\t<div class=\"contenitore_icone\">
 
-\t\t\t\t\t\t\t\t\t\t<div class=\"icona_rimuovere\"><a href=\"------------\"><i class=\"fa fa-pause fa-1x\"></i></a></div>
+\t\t\t\t\t\t\t\t\t\t<div class=\"icona_rimuovere\"><i class=\"fa fa-pause fa-1x\"></i></div>
 \t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t</div>
 
-\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</div></a>
 
+\t\t\t\t\t\t<a href=\"operatore_visualizza_campagna\">
 \t\t\t\t\t\t<div class=\"tendina_1_operatore cf\">
-\t\t\t\t\t\t\t\t<div class=\"icona_tendina\"><a href=\"indirizzo pagina profilo\"><i class=\"fa fa-flag fa-11x\"></i></a></div>
+\t\t\t\t\t\t\t\t<div class=\"icona_tendina\"><i class=\"fa fa-flag fa-11x\"></i></div>
 \t\t\t\t\t\t\t\t<div class=\"nomeEcognome\"><i>Campagna</br>Azienda</i></div>
 \t\t\t\t\t\t\t\t<div>
 \t\t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t\t\t<div class=\"contenitore_icone\">
 
-\t\t\t\t\t\t\t\t\t\t<div class=\"icona_rimuovere\"><a href=\"------------\"><i class=\"fa fa-pause fa-1x\"></i></a></div>
+\t\t\t\t\t\t\t\t\t\t<div class=\"icona_rimuovere\"><i class=\"fa fa-pause fa-1x\"></i></div>
 \t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t</div>
 
-\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</div></a>
 
-
+\t\t\t\t\t\t<a href=\"operatore_visualizza_campagna\">
 \t\t\t\t\t\t<div class=\"tendina_1_operatore cf\">
-\t\t\t\t\t\t\t\t<div class=\"icona_tendina\"><a href=\"indirizzo pagina profilo\"><i class=\"fa fa-flag fa-11x\"></i></a></div>
+\t\t\t\t\t\t\t\t<div class=\"icona_tendina\"><i class=\"fa fa-flag fa-11x\"></i></div>
 \t\t\t\t\t\t\t\t<div class=\"nomeEcognome\"><i>Campagna</br>Azienda</i></div>
 \t\t\t\t\t\t\t\t<div>
 \t\t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t\t\t<div class=\"contenitore_icone\">
 
-\t\t\t\t\t\t\t\t\t\t<div class=\"icona_rimuovere\"><a href=\"------------\"><i class=\"fa fa-check-circle fa-1x\"></i></a></div>
+\t\t\t\t\t\t\t\t\t\t<div class=\"icona_rimuovere\"><i class=\"fa fa-pause fa-1x\"></i></div>
 \t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t</div>
 
-\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</div></a>
 
-
+\t\t\t\t\t\t<a href=\"operatore_visualizza_campagna\">
 \t\t\t\t\t\t<div class=\"tendina_1_operatore cf\">
-\t\t\t\t\t\t\t\t<div class=\"icona_tendina\"><a href=\"indirizzo pagina profilo\"><i class=\"fa fa-flag fa-11x\"></i></a></div>
+\t\t\t\t\t\t\t\t<div class=\"icona_tendina\"><i class=\"fa fa-flag fa-11x\"></i></div>
 \t\t\t\t\t\t\t\t<div class=\"nomeEcognome\"><i>Campagna</br>Azienda</i></div>
 \t\t\t\t\t\t\t\t<div>
 \t\t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t\t\t<div class=\"contenitore_icone\">
 
-\t\t\t\t\t\t\t\t\t\t<div class=\"icona_rimuovere\"><a href=\"------------\"><i class=\"fa fa-check-circle fa-1x\"></i></a></div>
+\t\t\t\t\t\t\t\t\t\t<div class=\"icona_rimuovere\"><i class=\"fa fa-pause fa-1x\"></i></div>
 \t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t</div>
 
-\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</div></a>
 
-
+\t\t\t\t\t\t<a href=\"operatore_visualizza_campagna\">
 \t\t\t\t\t\t<div class=\"tendina_1_operatore cf\">
-\t\t\t\t\t\t\t\t<div class=\"icona_tendina\"><a href=\"indirizzo pagina profilo\"><i class=\"fa fa-flag fa-11x\"></i></a></div>
+\t\t\t\t\t\t\t\t<div class=\"icona_tendina\"><i class=\"fa fa-flag fa-11x\"></i></div>
 \t\t\t\t\t\t\t\t<div class=\"nomeEcognome\"><i>Campagna</br>Azienda</i></div>
 \t\t\t\t\t\t\t\t<div>
 \t\t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t\t\t<div class=\"contenitore_icone\">
 
-\t\t\t\t\t\t\t\t\t\t<div class=\"icona_rimuovere\"><a href=\"------------\"><i class=\"fa fa-check-circle fa-1x\"></i></a></div>
+\t\t\t\t\t\t\t\t\t\t<div class=\"icona_rimuovere\"><i class=\"fa fa-pause fa-1x\"></i></div>
 \t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t</div>
 
-\t\t\t\t\t\t</div>
-
-
-\t\t\t\t\t\t<div class=\"tendina_1_operatore cf\">
-\t\t\t\t\t\t\t\t<div class=\"icona_tendina\"><a href=\"indirizzo pagina profilo\"><i class=\"fa fa-flag fa-11x\"></i></a></div>
-\t\t\t\t\t\t\t\t<div class=\"nomeEcognome\"><i>Campagna</br>Azienda</i></div>
-\t\t\t\t\t\t\t\t<div>
-\t\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t\t\t<div class=\"contenitore_icone\">
-
-\t\t\t\t\t\t\t\t\t\t<div class=\"icona_rimuovere\"><a href=\"------------\"><i class=\"fa fa-check-circle fa-1x\"></i></a></div>
-\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t</div>
-
-\t\t\t\t\t\t</div>
-
-
-\t\t\t\t\t\t<div class=\"tendina_1_operatore cf\">
-\t\t\t\t\t\t\t\t<div class=\"icona_tendina\"><a href=\"indirizzo pagina profilo\"><i class=\"fa fa-flag fa-11x\"></i></a></div>
-\t\t\t\t\t\t\t\t<div class=\"nomeEcognome\"><i>Campagna</br>Azienda</i></div>
-\t\t\t\t\t\t\t\t<div>
-\t\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t\t\t\t<div class=\"contenitore_icone\">
-
-\t\t\t\t\t\t\t\t\t\t<div class=\"icona_rimuovere\"><a href=\"------------\"><i class=\"fa fa-check-circle fa-1x\"></i></a></div>
-\t\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t</div>
-
-\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</div></a>
 
 \t\t\t\t</nav>
 \t\t\t\t\t
-\t\t</aside>
+\t\t
 \t\t";
         
-        $__internal_7f08f3ad7ef3fae3e6838ae89ba840103ffcdc2967a5088f600df3ec8b83b8bd->leave($__internal_7f08f3ad7ef3fae3e6838ae89ba840103ffcdc2967a5088f600df3ec8b83b8bd_prof);
+        $__internal_54d9b40adfa88a8f01d5d5ef7b8299f321d2a61ff5208de8784c8ed4fb148021->leave($__internal_54d9b40adfa88a8f01d5d5ef7b8299f321d2a61ff5208de8784c8ed4fb148021_prof);
 
     }
 
@@ -210,7 +184,7 @@ class __TwigTemplate_b8b29a150d3e2b70648d0db1a8e29589aa8b3a2fa486e42ca4e62a50aa7
 /* {% block contenuti %}*/
 /* 				*/
 /* 			*/
-/* 		<aside class="contenitore_principale cf">*/
+/* 		*/
 /* 				<div class="titolo_contenuti">Campagne concluse</div>*/
 /* 					<div class="informazioni_operatori_campagne cf">*/
 /* 						<div class="profilo_operatori_campagne">Campagna</div>  */
@@ -218,104 +192,78 @@ class __TwigTemplate_b8b29a150d3e2b70648d0db1a8e29589aa8b3a2fa486e42ca4e62a50aa7
 /* 					</div>	*/
 /* 				<nav class="contenitore_elenco_operatori">*/
 /* 						*/
+/* 						<a href="operatore_visualizza_campagna">*/
 /* 						<div class="tendina_1_operatore cf">*/
-/* 								<div class="icona_tendina"><a href="indirizzo pagina profilo"><i class="fa fa-flag fa-11x"></i></a></div>*/
+/* 								<div class="icona_tendina"><i class="fa fa-flag fa-11x"></i></div>*/
 /* 								<div class="nomeEcognome"><i>Campagna</br>Azienda</i></div>*/
 /* 								<div>*/
 /* 									*/
 /* 										<div class="contenitore_icone">*/
 /* */
-/* 										<div class="icona_rimuovere"><a href="------------"><i class="fa fa-pause fa-1x"></i></a></div>*/
+/* 										<div class="icona_rimuovere"><i class="fa fa-pause fa-1x"></i></div>*/
 /* 										</div>*/
 /* 								</div>*/
 /* */
-/* 						</div>*/
+/* 						</div></a>*/
 /* */
+/* 						<a href="operatore_visualizza_campagna">*/
 /* 						<div class="tendina_1_operatore cf">*/
-/* 								<div class="icona_tendina"><a href="indirizzo pagina profilo"><i class="fa fa-flag fa-11x"></i></a></div>*/
+/* 								<div class="icona_tendina"><i class="fa fa-flag fa-11x"></i></div>*/
 /* 								<div class="nomeEcognome"><i>Campagna</br>Azienda</i></div>*/
 /* 								<div>*/
 /* 									*/
 /* 										<div class="contenitore_icone">*/
 /* */
-/* 										<div class="icona_rimuovere"><a href="------------"><i class="fa fa-pause fa-1x"></i></a></div>*/
+/* 										<div class="icona_rimuovere"><i class="fa fa-pause fa-1x"></i></div>*/
 /* 										</div>*/
 /* 								</div>*/
 /* */
-/* 						</div>*/
+/* 						</div></a>*/
 /* */
-/* */
+/* 						<a href="operatore_visualizza_campagna">*/
 /* 						<div class="tendina_1_operatore cf">*/
-/* 								<div class="icona_tendina"><a href="indirizzo pagina profilo"><i class="fa fa-flag fa-11x"></i></a></div>*/
+/* 								<div class="icona_tendina"><i class="fa fa-flag fa-11x"></i></div>*/
 /* 								<div class="nomeEcognome"><i>Campagna</br>Azienda</i></div>*/
 /* 								<div>*/
 /* 									*/
 /* 										<div class="contenitore_icone">*/
 /* */
-/* 										<div class="icona_rimuovere"><a href="------------"><i class="fa fa-check-circle fa-1x"></i></a></div>*/
+/* 										<div class="icona_rimuovere"><i class="fa fa-pause fa-1x"></i></div>*/
 /* 										</div>*/
 /* 								</div>*/
 /* */
-/* 						</div>*/
+/* 						</div></a>*/
 /* */
-/* */
+/* 						<a href="operatore_visualizza_campagna">*/
 /* 						<div class="tendina_1_operatore cf">*/
-/* 								<div class="icona_tendina"><a href="indirizzo pagina profilo"><i class="fa fa-flag fa-11x"></i></a></div>*/
+/* 								<div class="icona_tendina"><i class="fa fa-flag fa-11x"></i></div>*/
 /* 								<div class="nomeEcognome"><i>Campagna</br>Azienda</i></div>*/
 /* 								<div>*/
 /* 									*/
 /* 										<div class="contenitore_icone">*/
 /* */
-/* 										<div class="icona_rimuovere"><a href="------------"><i class="fa fa-check-circle fa-1x"></i></a></div>*/
+/* 										<div class="icona_rimuovere"><i class="fa fa-pause fa-1x"></i></div>*/
 /* 										</div>*/
 /* 								</div>*/
 /* */
-/* 						</div>*/
+/* 						</div></a>*/
 /* */
-/* */
+/* 						<a href="operatore_visualizza_campagna">*/
 /* 						<div class="tendina_1_operatore cf">*/
-/* 								<div class="icona_tendina"><a href="indirizzo pagina profilo"><i class="fa fa-flag fa-11x"></i></a></div>*/
+/* 								<div class="icona_tendina"><i class="fa fa-flag fa-11x"></i></div>*/
 /* 								<div class="nomeEcognome"><i>Campagna</br>Azienda</i></div>*/
 /* 								<div>*/
 /* 									*/
 /* 										<div class="contenitore_icone">*/
 /* */
-/* 										<div class="icona_rimuovere"><a href="------------"><i class="fa fa-check-circle fa-1x"></i></a></div>*/
+/* 										<div class="icona_rimuovere"><i class="fa fa-pause fa-1x"></i></div>*/
 /* 										</div>*/
 /* 								</div>*/
 /* */
-/* 						</div>*/
-/* */
-/* */
-/* 						<div class="tendina_1_operatore cf">*/
-/* 								<div class="icona_tendina"><a href="indirizzo pagina profilo"><i class="fa fa-flag fa-11x"></i></a></div>*/
-/* 								<div class="nomeEcognome"><i>Campagna</br>Azienda</i></div>*/
-/* 								<div>*/
-/* 									*/
-/* 										<div class="contenitore_icone">*/
-/* */
-/* 										<div class="icona_rimuovere"><a href="------------"><i class="fa fa-check-circle fa-1x"></i></a></div>*/
-/* 										</div>*/
-/* 								</div>*/
-/* */
-/* 						</div>*/
-/* */
-/* */
-/* 						<div class="tendina_1_operatore cf">*/
-/* 								<div class="icona_tendina"><a href="indirizzo pagina profilo"><i class="fa fa-flag fa-11x"></i></a></div>*/
-/* 								<div class="nomeEcognome"><i>Campagna</br>Azienda</i></div>*/
-/* 								<div>*/
-/* 									*/
-/* 										<div class="contenitore_icone">*/
-/* */
-/* 										<div class="icona_rimuovere"><a href="------------"><i class="fa fa-check-circle fa-1x"></i></a></div>*/
-/* 										</div>*/
-/* 								</div>*/
-/* */
-/* 						</div>*/
+/* 						</div></a>*/
 /* */
 /* 				</nav>*/
 /* 					*/
-/* 		</aside>*/
+/* 		*/
 /* 		{% endblock %}*/
 /* */

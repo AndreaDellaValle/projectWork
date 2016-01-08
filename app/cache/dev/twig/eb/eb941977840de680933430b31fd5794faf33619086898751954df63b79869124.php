@@ -18,8 +18,8 @@ class __TwigTemplate_8ab2ed586b19d332bddba1208740e4ddd494b06a91b61a413807b087c8c
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_1c48dd3901b0235ec0d3c704ff1f55c24717f619775c0d4d028e98f69aaa9fb8 = $this->env->getExtension("native_profiler");
-        $__internal_1c48dd3901b0235ec0d3c704ff1f55c24717f619775c0d4d028e98f69aaa9fb8->enter($__internal_1c48dd3901b0235ec0d3c704ff1f55c24717f619775c0d4d028e98f69aaa9fb8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle::layout_operatori.html.twig"));
+        $__internal_8eeb989e854947b725433d1b5f5430ebb0fcaf0908397f92257bb144109e6e13 = $this->env->getExtension("native_profiler");
+        $__internal_8eeb989e854947b725433d1b5f5430ebb0fcaf0908397f92257bb144109e6e13->enter($__internal_8eeb989e854947b725433d1b5f5430ebb0fcaf0908397f92257bb144109e6e13_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle::layout_operatori.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -31,13 +31,12 @@ class __TwigTemplate_8ab2ed586b19d332bddba1208740e4ddd494b06a91b61a413807b087c8c
         echo "\" rel=\"icon\" type=\"image/ico\">
 <meta charset = \"UTF-8\">\t\t
 <title>CS Crm</title>
-<link href=\"\">
 <link href=\"";
-        // line 8
+        // line 7
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("css/style_Project_Work2.css"), "html", null, true);
         echo "\" rel=\"stylesheet\" type=\"text/css\" charset=\"utf-8\"/>
 <link href=\"";
-        // line 9
+        // line 8
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("css/font-awesome.css"), "html", null, true);
         echo "\" rel=\"stylesheet\" type=\"text/css\">
 \t</head>
@@ -46,9 +45,9 @@ class __TwigTemplate_8ab2ed586b19d332bddba1208740e4ddd494b06a91b61a413807b087c8c
 
 \t\t
 \t\t\t";
-        // line 15
+        // line 14
         $this->displayBlock('header', $context, $blocks);
-        // line 18
+        // line 17
         echo "\t\t
 
 
@@ -60,16 +59,16 @@ class __TwigTemplate_8ab2ed586b19d332bddba1208740e4ddd494b06a91b61a413807b087c8c
 
 \t\t<div class=\"contenitore_menu\">
 \t\t\t";
-        // line 28
+        // line 27
         $this->displayBlock('menu', $context, $blocks);
-        // line 31
+        // line 30
         echo "\t\t</div>
 
 \t\t<div class=\"contenitore_principale cf\">
 \t\t\t";
-        // line 34
+        // line 33
         $this->displayBlock('contenuti', $context, $blocks);
-        // line 37
+        // line 36
         echo "\t\t</div>
 
 <div class=\"contenitore_sfondo cf\">
@@ -78,10 +77,6 @@ class __TwigTemplate_8ab2ed586b19d332bddba1208740e4ddd494b06a91b61a413807b087c8c
 
 
 <!--INSERIRE JQUERY per FAR FUNZIONARE LO SCRIPT-->
-<!--<script type=\"text/javascript\">
-var d = new Date();
-document.getElementById(\"dataEora\").innerHTML = d.toString();
-</script>-->
 
 <script type=\"text/javascript\">
 \$('.apriFinestraDettagliCampagna').on('click', function(evt){
@@ -93,55 +88,55 @@ document.getElementById(\"dataEora\").innerHTML = d.toString();
 \t</body>
 </html>";
         
-        $__internal_1c48dd3901b0235ec0d3c704ff1f55c24717f619775c0d4d028e98f69aaa9fb8->leave($__internal_1c48dd3901b0235ec0d3c704ff1f55c24717f619775c0d4d028e98f69aaa9fb8_prof);
+        $__internal_8eeb989e854947b725433d1b5f5430ebb0fcaf0908397f92257bb144109e6e13->leave($__internal_8eeb989e854947b725433d1b5f5430ebb0fcaf0908397f92257bb144109e6e13_prof);
 
     }
 
-    // line 15
+    // line 14
     public function block_header($context, array $blocks = array())
     {
-        $__internal_57d2a8e58d69fd8f5173bc0d9558ece09c4681ba241b491ca0a8f36096975f16 = $this->env->getExtension("native_profiler");
-        $__internal_57d2a8e58d69fd8f5173bc0d9558ece09c4681ba241b491ca0a8f36096975f16->enter($__internal_57d2a8e58d69fd8f5173bc0d9558ece09c4681ba241b491ca0a8f36096975f16_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "header"));
+        $__internal_1bb33a56b0204d3085b5e85500e961895ea0afedf6d3c0ccfb63c3d9daabf98a = $this->env->getExtension("native_profiler");
+        $__internal_1bb33a56b0204d3085b5e85500e961895ea0afedf6d3c0ccfb63c3d9daabf98a->enter($__internal_1bb33a56b0204d3085b5e85500e961895ea0afedf6d3c0ccfb63c3d9daabf98a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "header"));
 
-        // line 16
+        // line 15
         echo "\t\t\t\t";
-        $this->loadTemplate("AppBundle::header.html.twig", "AppBundle::layout_operatori.html.twig", 16)->display($context);
-        // line 17
+        $this->loadTemplate("AppBundle::header.html.twig", "AppBundle::layout_operatori.html.twig", 15)->display($context);
+        // line 16
         echo "\t\t\t";
         
-        $__internal_57d2a8e58d69fd8f5173bc0d9558ece09c4681ba241b491ca0a8f36096975f16->leave($__internal_57d2a8e58d69fd8f5173bc0d9558ece09c4681ba241b491ca0a8f36096975f16_prof);
+        $__internal_1bb33a56b0204d3085b5e85500e961895ea0afedf6d3c0ccfb63c3d9daabf98a->leave($__internal_1bb33a56b0204d3085b5e85500e961895ea0afedf6d3c0ccfb63c3d9daabf98a_prof);
 
     }
 
-    // line 28
+    // line 27
     public function block_menu($context, array $blocks = array())
     {
-        $__internal_b3463730cac1240e2f91f1670caf9990f812987a772319ca8b082d3cce1cb1a6 = $this->env->getExtension("native_profiler");
-        $__internal_b3463730cac1240e2f91f1670caf9990f812987a772319ca8b082d3cce1cb1a6->enter($__internal_b3463730cac1240e2f91f1670caf9990f812987a772319ca8b082d3cce1cb1a6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "menu"));
+        $__internal_6df77452f50758aab9a3ce5603bceaec694ea9eac0cfcf65156df4728686a056 = $this->env->getExtension("native_profiler");
+        $__internal_6df77452f50758aab9a3ce5603bceaec694ea9eac0cfcf65156df4728686a056->enter($__internal_6df77452f50758aab9a3ce5603bceaec694ea9eac0cfcf65156df4728686a056_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "menu"));
 
-        // line 29
+        // line 28
         echo "\t\t\t\t";
-        $this->loadTemplate("AppBundle::menu.html.twig", "AppBundle::layout_operatori.html.twig", 29)->display($context);
-        // line 30
+        $this->loadTemplate("AppBundle::menu.html.twig", "AppBundle::layout_operatori.html.twig", 28)->display($context);
+        // line 29
         echo "\t\t\t";
         
-        $__internal_b3463730cac1240e2f91f1670caf9990f812987a772319ca8b082d3cce1cb1a6->leave($__internal_b3463730cac1240e2f91f1670caf9990f812987a772319ca8b082d3cce1cb1a6_prof);
+        $__internal_6df77452f50758aab9a3ce5603bceaec694ea9eac0cfcf65156df4728686a056->leave($__internal_6df77452f50758aab9a3ce5603bceaec694ea9eac0cfcf65156df4728686a056_prof);
 
     }
 
-    // line 34
+    // line 33
     public function block_contenuti($context, array $blocks = array())
     {
-        $__internal_175abf4eb5804691b5939e4d29b769adfc7e54f164c56cdb21ccd068072f4c83 = $this->env->getExtension("native_profiler");
-        $__internal_175abf4eb5804691b5939e4d29b769adfc7e54f164c56cdb21ccd068072f4c83->enter($__internal_175abf4eb5804691b5939e4d29b769adfc7e54f164c56cdb21ccd068072f4c83_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "contenuti"));
+        $__internal_be5dbe6c4a71c60fba4414510aba4276f14b5e128954dea2152843cdbab038b6 = $this->env->getExtension("native_profiler");
+        $__internal_be5dbe6c4a71c60fba4414510aba4276f14b5e128954dea2152843cdbab038b6->enter($__internal_be5dbe6c4a71c60fba4414510aba4276f14b5e128954dea2152843cdbab038b6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "contenuti"));
 
-        // line 35
+        // line 34
         echo "\t\t\t\t";
-        $this->loadTemplate("AppBundle::contenuti.html.twig", "AppBundle::layout_operatori.html.twig", 35)->display($context);
-        // line 36
+        $this->loadTemplate("AppBundle::contenuti.html.twig", "AppBundle::layout_operatori.html.twig", 34)->display($context);
+        // line 35
         echo "\t\t\t";
         
-        $__internal_175abf4eb5804691b5939e4d29b769adfc7e54f164c56cdb21ccd068072f4c83->leave($__internal_175abf4eb5804691b5939e4d29b769adfc7e54f164c56cdb21ccd068072f4c83_prof);
+        $__internal_be5dbe6c4a71c60fba4414510aba4276f14b5e128954dea2152843cdbab038b6->leave($__internal_be5dbe6c4a71c60fba4414510aba4276f14b5e128954dea2152843cdbab038b6_prof);
 
     }
 
@@ -157,7 +152,7 @@ document.getElementById(\"dataEora\").innerHTML = d.toString();
 
     public function getDebugInfo()
     {
-        return array (  142 => 36,  139 => 35,  133 => 34,  126 => 30,  123 => 29,  117 => 28,  110 => 17,  107 => 16,  101 => 15,  73 => 37,  71 => 34,  66 => 31,  64 => 28,  52 => 18,  50 => 15,  41 => 9,  37 => 8,  30 => 4,  25 => 1,);
+        return array (  137 => 35,  134 => 34,  128 => 33,  121 => 29,  118 => 28,  112 => 27,  105 => 16,  102 => 15,  96 => 14,  72 => 36,  70 => 33,  65 => 30,  63 => 27,  51 => 17,  49 => 14,  40 => 8,  36 => 7,  30 => 4,  25 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -166,7 +161,6 @@ document.getElementById(\"dataEora\").innerHTML = d.toString();
 /* 		<link href="{{ asset('img/favicon.ico') }}" rel="icon" type="image/ico">*/
 /* <meta charset = "UTF-8">		*/
 /* <title>CS Crm</title>*/
-/* <link href="">*/
 /* <link href="{{ asset('css/style_Project_Work2.css') }}" rel="stylesheet" type="text/css" charset="utf-8"/>*/
 /* <link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet" type="text/css">*/
 /* 	</head>*/
@@ -204,10 +198,6 @@ document.getElementById(\"dataEora\").innerHTML = d.toString();
 /* */
 /* */
 /* <!--INSERIRE JQUERY per FAR FUNZIONARE LO SCRIPT-->*/
-/* <!--<script type="text/javascript">*/
-/* var d = new Date();*/
-/* document.getElementById("dataEora").innerHTML = d.toString();*/
-/* </script>-->*/
 /* */
 /* <script type="text/javascript">*/
 /* $('.apriFinestraDettagliCampagna').on('click', function(evt){*/

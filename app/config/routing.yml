@@ -4,3 +4,9 @@ app:
 
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+    #codemaster_mailup:
+    #resource: "@MailupBundle/Resources/config/routing.yml"
+    #prefix: "/mailup"
+
+    #guzzle: clients: codemaster_mailup: base_url: "https://services.mailup.com"

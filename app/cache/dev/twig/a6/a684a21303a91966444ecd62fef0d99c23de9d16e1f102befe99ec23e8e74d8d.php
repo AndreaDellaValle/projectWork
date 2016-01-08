@@ -15,8 +15,8 @@ class __TwigTemplate_65ab25f9ecf7a5f8703e289bc6d10cb879e78f931ded94e4250ac4dbeb8
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_186efd090628fef875657ac535ace8267d1c5d797ff3693c4ec4c0778517afc6 = $this->env->getExtension("native_profiler");
-        $__internal_186efd090628fef875657ac535ace8267d1c5d797ff3693c4ec4c0778517afc6->enter($__internal_186efd090628fef875657ac535ace8267d1c5d797ff3693c4ec4c0778517afc6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle::menu.html.twig"));
+        $__internal_26d9842f6bb0a96d5df522fd8dc495bcced200c63f30705c0616a56bad0d16b8 = $this->env->getExtension("native_profiler");
+        $__internal_26d9842f6bb0a96d5df522fd8dc495bcced200c63f30705c0616a56bad0d16b8->enter($__internal_26d9842f6bb0a96d5df522fd8dc495bcced200c63f30705c0616a56bad0d16b8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle::menu.html.twig"));
 
         // line 1
         echo "<div class=\"contenitore_menu\">
@@ -25,10 +25,10 @@ class __TwigTemplate_65ab25f9ecf7a5f8703e289bc6d10cb879e78f931ded94e4250ac4dbeb8
 \t\t\t<p class=\"contatti\"><a href=\"http://localhost/PROJECTWORK/-----------.html\">CONTATTI</a></p>-->
 \t\t\t<p class=\"campagne\"><a href=\"admin_campagne\">CAMPAGNE</a></p>
 \t\t\t<p class=\"operatori\"><a href=\"admin_operatori\">OPERATORI</a></p>
-\t\t\t<p class=\"report\"><a href=\"admin_report\">REPORT</a></p>
+\t\t\t
 \t\t</div>";
         
-        $__internal_186efd090628fef875657ac535ace8267d1c5d797ff3693c4ec4c0778517afc6->leave($__internal_186efd090628fef875657ac535ace8267d1c5d797ff3693c4ec4c0778517afc6_prof);
+        $__internal_26d9842f6bb0a96d5df522fd8dc495bcced200c63f30705c0616a56bad0d16b8->leave($__internal_26d9842f6bb0a96d5df522fd8dc495bcced200c63f30705c0616a56bad0d16b8_prof);
 
     }
 
@@ -48,5 +48,5 @@ class __TwigTemplate_65ab25f9ecf7a5f8703e289bc6d10cb879e78f931ded94e4250ac4dbeb8
 /* 			<p class="contatti"><a href="http://localhost/PROJECTWORK/-----------.html">CONTATTI</a></p>-->*/
 /* 			<p class="campagne"><a href="admin_campagne">CAMPAGNE</a></p>*/
 /* 			<p class="operatori"><a href="admin_operatori">OPERATORI</a></p>*/
-/* 			<p class="report"><a href="admin_report">REPORT</a></p>*/
+/* 			*/
 /* 		</div>*/

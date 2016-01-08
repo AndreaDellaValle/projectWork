@@ -1,0 +1,118 @@
+{% extends "AppBundle::layout_operatori.html.twig" %}
+
+{% block menu %}
+
+		<nav class="contenitore_menu">
+			<p class="home"><a href="operatore_index">HOME</a></p>
+			<p class="campagne"><a href="operatore_campagne_attive">TORNA A CAMPAGNE ATTIVE</a></p>
+		</nav>
+
+{% endblock %}
+{% block contenuti %}
+
+		<!--<aside class="contenitore_principale cf">-->
+				<div class="titolo_contenuti">Contatti Campagna xxxxxx
+				</div>
+					<div class="informazioni_operatori_campagne cf">
+						<div class="profilo_operatori_campagne">Campagna</div>
+						<div class="campagne_passate">Status</div> 
+					</div>
+					<nav class="contenitore_elenco_operatori">
+						
+						<a href="dettagli_contatto">
+							<div class="tendina_1_operatore cf">
+								<div class="icona_tendina"><i class="fa fa-flag fa-11x"></i></div>
+								<div class="nomeEcognome"><i>NomeCampagna</br>NomeAzienda</i></div>
+								<div>
+								
+										<div class="contenitore_icone">
+
+										<div class="icona_rimuovere"><i class="fa fa-check-circle fa-1x"></i></div>
+										<div class="icona_pausa"><i class="fa fa-bullhorn fa-1x"></i></div>
+										<div class="icona_assegna_contatti"><i class=""></i></div>
+										</div>
+								</div>
+
+							</div>
+						</a>
+
+						<a href="dettagli_contatto">
+							<div class="tendina_1_operatore cf">
+								<div class="icona_tendina"><i class="fa fa-flag fa-11x"></i></div>
+								<div class="nomeEcognome"><i>NomeCampagna</br>NomeAzienda</i></div>
+								<div>
+								
+										<div class="contenitore_icone">
+
+										<div class="icona_rimuovere"><i class="fa fa-check-circle fa-1x"></i></div>
+										<div class="icona_pausa"><i class="fa fa-bullhorn fa-1x"></i></div>
+										<div class="icona_assegna_contatti"><i class=""></i></div>
+										</div>
+								</div>
+
+							</div>
+						</a>
+
+						<a href="dettagli_contatto">
+							<div class="tendina_1_operatore cf">
+								<div class="icona_tendina"><i class="fa fa-flag fa-11x"></i></div>
+								<div class="nomeEcognome"><i>NomeCampagna</br>NomeAzienda</i></div>
+								<div>
+								
+										<div class="contenitore_icone">
+
+										<div class="icona_rimuovere"><i class="fa fa-check-circle fa-1x"></i></div>
+										<div class="icona_pausa"><i class="fa fa-bullhorn fa-1x"></i></div>
+										<div class="icona_assegna_contatti"><i class=""></i></div>
+										</div>
+								</div>
+
+							</div>
+						</a>
+
+						<a href="dettagli_contatto">
+							<div class="tendina_1_operatore cf">
+								<div class="icona_tendina"><i class="fa fa-flag fa-11x"></i></div>
+								<div class="nomeEcognome"><i>NomeCampagna</br>NomeAzienda</i></div>
+								<div>
+								
+										<div class="contenitore_icone">
+
+										<div class="icona_rimuovere"><i class="fa fa-check-circle fa-1x"></i></div>
+										<div class="icona_pausa"><i class="fa fa-bullhorn fa-1x"></i></div>
+										<div class="icona_assegna_contatti"><i class=""></i></div>
+										</div>
+								</div>
+
+							</div>
+						</a>
+
+						<a href="dettagli_contatto">
+							<div class="tendina_1_operatore cf">
+								<div class="icona_tendina"><i class="fa fa-flag fa-11x"></i></div>
+								<div class="nomeEcognome"><i>NomeCampagna</br>NomeAzienda</i></div>
+								<div>
+								
+										<div class="contenitore_icone">
+
+										<div class="icona_rimuovere"><i class="fa fa-check-circle fa-1x"></i></div>
+										<div class="icona_pausa"><i class="fa fa-bullhorn fa-1x"></i></div>
+										<div class="icona_assegna_contatti"><i class=""></i></div>
+										</div>
+								</div>
+
+							</div>
+						</a>
+					</nav>
+
+					<div class="hidden">CIAO MAMMA</div>
+					
+		<!--</aside>-->
+<script type="text/javascript">
+$('a.dettagli_contatto').on('click', function(evt){
+	evt.preventDefault();
+	$('#tendina').removeClass('hidden');
+	$('.body').
+});
+</script>
+{% endblock %}

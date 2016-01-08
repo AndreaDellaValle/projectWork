@@ -195,6 +195,16 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'AppBundle\\Controller\\PagineController::dettagli_campagnaAction',  '_route' => 'dettagli_campagna',);
         }
 
+        // operatore_visualizza_campagna
+        if ($pathinfo === '/operatore_visualizza_campagna') {
+            return array (  '_controller' => 'AppBundle\\Controller\\PagineController::operatore_visualizza_campagnaAction',  '_route' => 'operatore_visualizza_campagna',);
+        }
+
+        // dettagli_contatto
+        if ($pathinfo === '/dettagli_contatto') {
+            return array (  '_controller' => 'AppBundle\\Controller\\PagineController::dettagli_contattoAction',  '_route' => 'dettagli_contatto',);
+        }
+
         // example
         if ($pathinfo === '/example') {
             return array (  '_controller' => 'AppBundle\\Controller\\PagineController::exampleAction',  '_route' => 'example',);

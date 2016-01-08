@@ -15,8 +15,8 @@ class __TwigTemplate_8fb0481e740f430dbc2b5d457e2a60ffd994fc9059d770e0a51270dd8c9
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_e6ca8132fb115d787f71f3129e7be7d05e74eb5b1bad8b9069c366171fbc4134 = $this->env->getExtension("native_profiler");
-        $__internal_e6ca8132fb115d787f71f3129e7be7d05e74eb5b1bad8b9069c366171fbc4134->enter($__internal_e6ca8132fb115d787f71f3129e7be7d05e74eb5b1bad8b9069c366171fbc4134_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle::admin_report.html.twig"));
+        $__internal_ee142a14b767e00b6496682f348921b5d7293186dae9f48edafe5f99bfa5bebb = $this->env->getExtension("native_profiler");
+        $__internal_ee142a14b767e00b6496682f348921b5d7293186dae9f48edafe5f99bfa5bebb->enter($__internal_ee142a14b767e00b6496682f348921b5d7293186dae9f48edafe5f99bfa5bebb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle::admin_report.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -136,7 +136,7 @@ class __TwigTemplate_8fb0481e740f430dbc2b5d457e2a60ffd994fc9059d770e0a51270dd8c9
 </html>
 ";
         
-        $__internal_e6ca8132fb115d787f71f3129e7be7d05e74eb5b1bad8b9069c366171fbc4134->leave($__internal_e6ca8132fb115d787f71f3129e7be7d05e74eb5b1bad8b9069c366171fbc4134_prof);
+        $__internal_ee142a14b767e00b6496682f348921b5d7293186dae9f48edafe5f99bfa5bebb->leave($__internal_ee142a14b767e00b6496682f348921b5d7293186dae9f48edafe5f99bfa5bebb_prof);
 
     }
 

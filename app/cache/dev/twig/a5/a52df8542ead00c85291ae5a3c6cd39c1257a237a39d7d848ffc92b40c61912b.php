@@ -15,8 +15,8 @@ class __TwigTemplate_bc3c8f25a85ab5e574154319ad91832da3160dcbd0afdc20f6b4d7c600c
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_88b1f38502ac7a02baa73e57c9b8a0e22aecde3f03ccf0fa9358535fe8bf6114 = $this->env->getExtension("native_profiler");
-        $__internal_88b1f38502ac7a02baa73e57c9b8a0e22aecde3f03ccf0fa9358535fe8bf6114->enter($__internal_88b1f38502ac7a02baa73e57c9b8a0e22aecde3f03ccf0fa9358535fe8bf6114_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle::header.html.twig"));
+        $__internal_a073281a1be0b8f175c40a92f18874044508e2b0556db9d1ce77558b3c56ea6a = $this->env->getExtension("native_profiler");
+        $__internal_a073281a1be0b8f175c40a92f18874044508e2b0556db9d1ce77558b3c56ea6a->enter($__internal_a073281a1be0b8f175c40a92f18874044508e2b0556db9d1ce77558b3c56ea6a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle::header.html.twig"));
 
         // line 1
         echo "<div class=\"contenitore_header cf\">
@@ -25,7 +25,7 @@ class __TwigTemplate_bc3c8f25a85ab5e574154319ad91832da3160dcbd0afdc20f6b4d7c600c
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/logo_bianco.png"), "html", null, true);
         echo "\" width=\"100\" height=\"40\"></a></p>
 \t\t\t<div class=\"header_info\">
-\t\t\t\t<p class = \"admin\"><span class=\"scrittaAdmin\">Admin:</span> ";
+\t\t\t\t<p class = \"admin\"><span class=\"scrittaAdmin\">Utente:</span> ";
         // line 4
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()), "username", array()), "html", null, true);
         echo "</p>
@@ -59,7 +59,7 @@ function checkTime(i) {
 </script>
 </div>";
         
-        $__internal_88b1f38502ac7a02baa73e57c9b8a0e22aecde3f03ccf0fa9358535fe8bf6114->leave($__internal_88b1f38502ac7a02baa73e57c9b8a0e22aecde3f03ccf0fa9358535fe8bf6114_prof);
+        $__internal_a073281a1be0b8f175c40a92f18874044508e2b0556db9d1ce77558b3c56ea6a->leave($__internal_a073281a1be0b8f175c40a92f18874044508e2b0556db9d1ce77558b3c56ea6a_prof);
 
     }
 
@@ -81,7 +81,7 @@ function checkTime(i) {
 /* <div class="contenitore_header cf">*/
 /* 		<p class = "logo"><a href="admin_index"><img src= "{{ asset ('img/logo_bianco.png') }}" width="100" height="40"></a></p>*/
 /* 			<div class="header_info">*/
-/* 				<p class = "admin"><span class="scrittaAdmin">Admin:</span> {{ app.user.username }}</p>*/
+/* 				<p class = "admin"><span class="scrittaAdmin">Utente:</span> {{ app.user.username }}</p>*/
 /* 				<p id = "dataEora"></p>*/
 /* 			</div>*/
 /* 		*/

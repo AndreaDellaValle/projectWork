@@ -21,20 +21,20 @@ class __TwigTemplate_1bc8c6af0d78c8182a6ce1facfdac41b7899dbbde5779fde7753227c629
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_e89207580b15b2fcc9dbd8b6b64b564104f834f8a8d8e284395438bcd64e5b24 = $this->env->getExtension("native_profiler");
-        $__internal_e89207580b15b2fcc9dbd8b6b64b564104f834f8a8d8e284395438bcd64e5b24->enter($__internal_e89207580b15b2fcc9dbd8b6b64b564104f834f8a8d8e284395438bcd64e5b24_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle::admin_campagne.html.twig"));
+        $__internal_9d271784d16c322957a1393b40f6327373c7d02e4bd2662f2b4b7e0411bc5777 = $this->env->getExtension("native_profiler");
+        $__internal_9d271784d16c322957a1393b40f6327373c7d02e4bd2662f2b4b7e0411bc5777->enter($__internal_9d271784d16c322957a1393b40f6327373c7d02e4bd2662f2b4b7e0411bc5777_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle::admin_campagne.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_e89207580b15b2fcc9dbd8b6b64b564104f834f8a8d8e284395438bcd64e5b24->leave($__internal_e89207580b15b2fcc9dbd8b6b64b564104f834f8a8d8e284395438bcd64e5b24_prof);
+        $__internal_9d271784d16c322957a1393b40f6327373c7d02e4bd2662f2b4b7e0411bc5777->leave($__internal_9d271784d16c322957a1393b40f6327373c7d02e4bd2662f2b4b7e0411bc5777_prof);
 
     }
 
     // line 2
     public function block_contenuti($context, array $blocks = array())
     {
-        $__internal_369a3779045244096b93541ed6f7a58b4f328ea4a79c2c8dabaae3839caadeb9 = $this->env->getExtension("native_profiler");
-        $__internal_369a3779045244096b93541ed6f7a58b4f328ea4a79c2c8dabaae3839caadeb9->enter($__internal_369a3779045244096b93541ed6f7a58b4f328ea4a79c2c8dabaae3839caadeb9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "contenuti"));
+        $__internal_e668be205110f29c746e87ea8130fb2f03408049db29c1e52de93cfb1e99ddb4 = $this->env->getExtension("native_profiler");
+        $__internal_e668be205110f29c746e87ea8130fb2f03408049db29c1e52de93cfb1e99ddb4->enter($__internal_e668be205110f29c746e87ea8130fb2f03408049db29c1e52de93cfb1e99ddb4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "contenuti"));
 
         // line 3
         echo "<div class=\"titolo_contenuti\">Campagne
@@ -161,7 +161,7 @@ class __TwigTemplate_1bc8c6af0d78c8182a6ce1facfdac41b7899dbbde5779fde7753227c629
 \t\t\t\t\t</nav>
 ";
         
-        $__internal_369a3779045244096b93541ed6f7a58b4f328ea4a79c2c8dabaae3839caadeb9->leave($__internal_369a3779045244096b93541ed6f7a58b4f328ea4a79c2c8dabaae3839caadeb9_prof);
+        $__internal_e668be205110f29c746e87ea8130fb2f03408049db29c1e52de93cfb1e99ddb4->leave($__internal_e668be205110f29c746e87ea8130fb2f03408049db29c1e52de93cfb1e99ddb4_prof);
 
     }
 

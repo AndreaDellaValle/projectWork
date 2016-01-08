@@ -102,6 +102,24 @@ class PagineController extends Controller
     }
 
     /**
+     * @Route("/operatore_visualizza_campagna", name="operatore_visualizza_campagna")
+     */
+    public function operatore_visualizza_campagnaAction(Request $request)
+    {
+        // pagina index operatore
+        return $this->render('AppBundle::operatore_visualizza_campagna.html.twig');
+    }
+
+    /**
+     * @Route("/dettagli_contatto", name="dettagli_contatto")
+     */
+    public function dettagli_contattoAction(Request $request)
+    {
+        // pagina index operatore
+        return $this->render('AppBundle::dettagli_contatto.html.twig');
+    }
+
+    /**
      * @Route("/example", name="example")
      */
     public function exampleAction()
