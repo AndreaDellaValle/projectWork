@@ -1745,7 +1745,7 @@
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/e5e7a2b8984da8dfedaf44adc7e5f60a62ad280c",
+            "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/6ccff96434c0ac7fee077d1dce90966341dfd278",
             "reference": "45d6f40178216a840885b4ca6d7de9e67068568a",
             "shasum": ""
         },
@@ -2387,6 +2387,47 @@
         "support": {
             "source": "https://github.com/taginnovationschool/codemaster-mailup-bundle/tree/master",
             "issues": "https://github.com/taginnovationschool/codemaster-mailup-bundle/issues"
+        }
+    },
+    {
+        "name": "taginnovationschool/codemaster-mailup",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/taginnovationschool/codemaster-mailup.git",
+            "reference": "545b8269898d84c09a69e3b176e77f2ffb12a131"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/taginnovationschool/codemaster-mailup/zipball/545b8269898d84c09a69e3b176e77f2ffb12a131",
+            "reference": "545b8269898d84c09a69e3b176e77f2ffb12a131",
+            "shasum": ""
+        },
+        "require-dev": {
+            "apigen/apigen": "^4.1",
+            "escapestudios/symfony2-coding-standard": "~2.0",
+            "phpunit/phpunit": "^5.0",
+            "squizlabs/php_codesniffer": "^2.4"
+        },
+        "time": "2015-11-29 16:17:39",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Codemaster\\MailUp\\": "src"
+            }
+        },
+        "authors": [
+            {
+                "name": "Marco Vito Moscaritolo",
+                "email": "mavimo@gmail.com"
+            }
+        ],
+        "description": "Mailup client",
+        "support": {
+            "source": "https://github.com/taginnovationschool/codemaster-mailup/tree/master",
+            "issues": "https://github.com/taginnovationschool/codemaster-mailup/issues"
         }
     }
 ]

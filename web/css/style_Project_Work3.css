@@ -1,0 +1,606 @@
+@font-face{ 
+	font-family: 'Akkurat'; 
+	src: 
+		url('font/Akkurat-Normal.ttf') format('truetype'), /* IE9 Compat Modes */ 
+		url('font/Akkurat-Normal.woff') format('woff'); /* Pretty Modern Browsers */
+		/*url('font/Akkurat-Normal.eot'), /* IE9 Compat Modes */
+}
+
+@font-face{ 
+	font-family: 'AkkuratLightPro';
+	src: 
+		url('font/Akkurat-Light.ttf') format('truetype'), /* IE9 Compat Modes */
+		url('font/Akkurat-Light.woff') format('woff'); /* Pretty Modern Browsers */
+		/*url('font/Akkurat-Light.eot'), /* IE9 Compat Modes */
+}
+
+.body {
+margin: 0;
+padding: 0;
+}
+
+.cf::after, .cf::before{
+	content: ' ';
+	display: block;
+	clear: both;
+}
+
+
+
+/*-------------------------------------------- INIZIO PAGINE PICCOLE---------------------------------------------*/
+
+.contenitore_header_pp{
+	height: 400px;
+	background-color: #CCCCCC;
+	color: #333333;
+	width: 650px;
+	margin-top: 80px;
+	margin-left: 270px;
+	font-family: Akkurat;
+	font-size: 1.5em;
+	padding: 10px 0px 0px 10px;
+	position: absolute;
+	z-index: 1;
+	opacity: 1;
+	border-radius: 20px;
+}
+
+.contenitore_header_pp span {
+	font-family: 'AkkuratLightPro';
+}
+/*---------------------------------CONTENITORE HEADER OPERATORE----------------------------*/
+.contenitore_header_pp_operatore{
+	height: 400px;
+	background-color: #CCCCCC;
+	color: #333333;
+	width: 750px;
+	margin-top: 80px;
+	margin-left: 220px;
+	font-family: Akkurat;
+	font-size: 1.5em;
+	padding: 10px 0px 0px 10px;
+	position: absolute;
+	z-index: 1;
+	border-radius: 20px;
+}
+
+.contenitore_header_pp_operatore span {
+	font-family: 'AkkuratLightPro';
+}
+
+.contenitore_header_pp_operatore i {
+	margin-bottom: 10px;
+	padding-top: 10px;
+}
+
+.titolo_contenuti_sinistra_pp_operatore {
+	width:400px;
+	border-top: 2px solid #666666;
+	margin-top: 5px;
+	padding-top: 5px;
+	margin-bottom: 5px;
+}
+/*---------------------------------FINE CONTENITORE HEADER OPERATORE----------------------*/
+.contenitore_sfondo_pp {
+	background: radial-gradient(#666666 , #333333);
+	opacity: 0.9;
+	height: 660px;
+	margin: 0;
+	padding: 0;	
+}
+
+.titolo_contenuti_sinistra_pp {
+	width: 250px;
+	border-top: 2px solid #666666;
+	margin-top: 5px;
+	padding-top: 5px;
+	margin-bottom: 5px;
+}
+
+.contenuti_sinistra_pp {
+	width: 250px;
+	height: 230px;
+	background-color: white;
+	float: left;
+}
+
+.contenuti_sinistra_pp p {
+font-family: 'AkkuratLightPro';
+	margin-top: 0px;
+	padding: 5px 0px 0px 5px;
+	margin: 0;
+}
+
+.contenuti_sinistra_pp p:hover {
+	background-color: blue;
+	color: white;
+}
+
+.contenuti_sinistra_pp_selezione_campagne {
+	width: 250px;
+	height: 190px;
+	background-color: white;
+	float: left;
+}
+
+.contenuti_sinistra_pp_selezione_campagne p {
+font-family: 'AkkuratLightPro';
+	margin-top: 0px;
+	padding: 5px 0px 0px 5px;
+	margin: 0;
+}
+
+.contenuti_sinistra_pp_selezione_campagne p:hover {
+	background-color: blue;
+	color: white;
+}
+
+/*--------------------------------CONTENUTI SINISTRA OPERATORE--------------------------*/
+
+
+.contenuti_sinistra_pp_operatore {
+	width: 350px;
+	height: 230px;
+	background-color: white;
+	float: left;
+}
+
+.contenuti_sinistra_pp_operatore p {
+font-family: 'AkkuratLightPro';
+	margin-top: 0px;
+	padding: 5px 0px 0px 5px;
+	margin: 0;
+}
+
+.contenuti_sinistra_pp_operatore p:hover {
+	background-color: blue;
+	color: white;
+}
+
+
+/*--------------------------------FINE CONTENUTI SINISTRA OPERATORE--------------------------*/
+
+/*--------------------------------CONTENUTI SINISTRA CAMPAGNA---------------------------------*/
+.contenuti_sinistra_pp_campagna {
+	width: 350px;
+	height: 230px;
+	background-color: white;
+	float: left;
+}
+
+.contenuti_sinistra_pp_campagna p {
+font-family: 'AkkuratLightPro';
+font-size: 15px;
+	margin-top: 0px;
+	padding: 5px 0px 0px 5px;
+	margin: 0;
+}
+
+.contenuti_sinistra_pp_campagna p:hover {
+	background-color: blue;
+	color: white;
+}
+/*--------------------------------FINE CONTENUTI SINISTRA CAMPAGNA----------------------------*/
+
+.contenuti_destra_pp_operatore p{
+	width: 350px;
+	height: 130px;
+	background-color: #cccccc;
+	float: left;
+	margin-left: 30px;
+	padding: 0;
+	margin-top: 0;
+	display: inline-block;
+}
+.contattiAssegnatiOperatore a{
+	text-decoration: none;
+	color: #333;
+	width: 350px;
+	height: 28px;
+	}
+	
+.contattiAssegnatiOperatore a:hover {
+	background-color: blue;
+	color: white;
+	width: 350px;
+	height: 28px;
+}
+
+.titolo_contenuti_destra_pp {
+	margin-top: -41px;
+	width: 360px;
+	border-top: 2px solid #666666;
+	padding-top: 5px;
+	padding-left: 30px;
+	margin-bottom: 0px;
+	float: left;
+}
+
+.contenuti_destra_pp input {
+	padding-top: 0;
+	float: left;
+	margin-left: 30px;
+	width: 350px;
+	height: 25px;
+	font-size: 1em;
+	font-family: 'AkkuratLightPro';
+}
+
+.numero_chiamate_operatore {
+	padding-top: 0;
+	float: left;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	width: 350px;
+}
+
+
+form[name="inserimento_azienda"] {
+	padding-top: 0;
+	float: left;
+	margin-top: 10px;
+	margin-left: 30px;
+	width: 350px;
+	height: 25px;
+	font-size: 1em;
+	font-family: Akkurat;
+}
+
+form[name="selezione_operatori"] {
+	padding-top: 0;
+	float: left;
+	margin-top: 50px;
+	margin-left: 0px;
+	width: 350px;
+	height: 25px;
+	font-size: 1em;
+	font-family: Akkurat;
+}
+
+label[for="selezione_operatori"] {
+	margin-left: 30px;
+}
+
+input[name="inserimento_azienda"] {
+	margin: 0;
+}
+/*------------------------------BOTTONI -------------------------*/
+
+button[name="annulla"] {
+	background-color:red;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid red;
+	float: bottom;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Akkurat;
+	font-size:17px;
+	padding:6px 3px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	margin-top: 180px;
+	margin-right: 40px;
+	margin-left: -140px;
+}
+button[name="annulla"]:hover {
+	background-color:darkred;
+}
+button[name="annulla"]:active {
+	position:relative;
+	top:1px;
+}
+
+button[name="avanti"] {
+	background-color:#44c767;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #18ab29;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Akkurat;
+	font-size:17px;
+	padding:6px 3px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	margin-left: 40px;
+}
+button[name="avanti"]:hover {
+	background-color:darkgreen;
+}
+
+button[name="avanti"]:active {
+	position:relative;
+	top:1px;
+}
+/*--------------------BOTTONI CAMPAGNA------------------------*/
+
+button[name="annulla_campagna"] {
+	background-color:red;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid red;
+	float: bottom;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Akkurat;
+	font-size:17px;
+	padding:6px 3px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	margin-top: 120px;
+	margin-right: 40px;
+	margin-left: -140px;
+}
+
+button[name="annulla_campagna"]:hover {
+	background-color:darkred;
+}
+button[name="annulla_campagna"]:active {
+	position:relative;
+	top:1px;
+}
+
+button[name="avanti_campagna"] {
+	background-color:#44c767;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #18ab29;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Akkurat;
+	font-size:17px;
+	padding:6px 3px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	margin-left: 40px;
+}
+
+button[name="avanti_campagna"]:hover {
+	background-color:darkgreen;
+}
+
+button[name="avanti_campagna"]:active {
+	position:relative;
+	top:1px;
+}
+
+input[name="inserimento_operatori"] {
+	margin: 0;
+	float: right;
+}
+
+/*---------------------------------------------BOTTONI OPERATORE----------------*/
+
+button[name="annulla_operatore"] {
+	background-color:red;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid red;
+	float: bottom;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Akkurat;
+	font-size:17px;
+	padding:6px 3px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	margin-top: 0px;
+	margin-right: 40px;
+	/*margin-left: -430px;*/
+
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+button[name="annulla_operatore"]:hover {
+	background-color:darkred;
+}
+button[name="annulla_operatore"]:active {
+	position:relative;
+	top:1px;
+}
+
+button[name="stampa_report_operatore"] {
+	background-color:#44c767;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #18ab29;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Akkurat;
+	font-size:17px;
+	padding:6px 3px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	margin-left: 60px;
+}
+
+button[name="stampa_report_operatore"]:hover {
+	background-color:darkgreen;
+}
+
+button[name="stampa_report_operatore"]:active {
+	position:relative;
+	top:1px;
+}
+button[name="comincia_chiamata"] {
+	background-color:#44c767;
+	-moz-border-radius:5px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #18ab29;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Akkurat;
+	font-size:15px;
+	padding:6px 3px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	margin-left: 60px;
+}
+
+button[name="comincia_chiamata"]:hover {
+	background-color:darkgreen;
+}
+
+button[name="comincia_chiamata"]:active {
+	position:relative;
+	top:1px;
+}
+
+button[name="concludi_chiamata"] {
+	background-color:red;
+	-moz-border-radius:5px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid red;
+	float: bottom;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Akkurat;
+	font-size:15px;
+	padding:6px 3px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	margin-top: 0px;
+	margin-right: 40px;
+	opacity: 1;
+	/*margin-left: -430px;*/
+
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+button[name="concludi_chiamata"]:hover {
+	background-color:darkred;
+}
+button[name="concludi_chiamata"]:active {
+	position:relative;
+	top:1px;
+}
+
+/*-------------------------------------------------FINE PAGINE PICCOLE-----------------------------*/
+
+/*---------------------------------------------CHIAMATA OPERATORE----------------------------------*/
+.chiamata_contenitore_header_pp_operatore{
+	height: 402px;
+	background-color: #CCCCCC;
+	color: #333333;
+	width: 752px;
+	margin-top: 80px;
+	margin-left: 220px;
+	font-family: Akkurat;
+	font-size: 1.5em;
+	padding: 10px 0px 0px 10px;
+	position: absolute;
+	z-index: 1;
+	box-shadow: -20px 20px 20px #232323;
+	border-radius: 20px;
+}
+
+.chiamata_contenitore_header_pp_operatore span {
+	font-family: 'AkkuratLightPro';
+}
+
+.chiamata_contenitore_header_pp_operatore i {
+	margin-bottom: 10px;
+	padding-top: 10px;
+}
+
+
+.info_chiamata_sinistra_pp_operatore{
+	width: 350px;
+	border-top: 2px solid #666666;
+	margin-top: 5px;
+	padding-top: 5px;
+	margin-bottom: 5px;
+}
+
+.contenuti_chiamata_sinistra_pp_campagna {
+	width: 350px;
+	height: 287px;
+	background-color: white;
+	float: left;
+}
+
+.contenuti_chiamata_sinistra_pp_campagna p {
+font-family: 'AkkuratLightPro';
+font-size: 15px;
+	margin-top: 0px;
+	padding: 5px 0px 0px 5px;
+	margin: 0;
+}
+
+.contenuti_chiamata_sinistra_pp_campagna p:hover {
+	background-color: blue;
+	color: white;
+}
+
+span.evidenzia {
+	color: red;
+	font-weight: bold;
+}
+
+.azioni_chiamata{
+	padding-top: 0;
+	float: left;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	margin-top: 50px;
+	width: 350px;
+	text-align: center;
+}
+
+.calendario_appuntamento {
+	float: right;
+	margin-right: 10px;
+	margin-top: -5px;
+	
+}
+
+.calendario_appuntamento input{
+	width: 130px;
+	background-color: white;
+	font-family:Akkurat;
+	margin-top: 3px;
+	border-style: none;
+}
+
+.calendario_appuntamento a {
+	margin-top: 110px;
+}
+
+
+
+textarea {
+	margin-left: 30px;
+	background-color: #FFFFCC;
+	border-style: none;
+	font-family:Akkurat;
+	font-size: 15px;
+	height: 120px;
+	width: 190px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

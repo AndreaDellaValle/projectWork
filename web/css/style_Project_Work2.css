@@ -1,31 +1,19 @@
-/*@font-face{ font-family: 'MyWebFont'; 
-	src: url('WebFont.eot'); 
-	src: url('WebFont.eot?#iefix') 
-	format('embedded-opentype'), 
-	url('WebFont.woff') 
-	format('woff'), 
-	url('WebFont.ttf') 
-	format('truetype'), 
-	url('WebFont.svg#webfont') format('svg'); 
-} */
 
-/*@font-face {
-	font-family: 'Akkurat';
-	src: url('../fonts/Akkurat.ttf');
-	}*/
 
 @font-face{ 
 	font-family: 'Akkurat'; 
-	src: url('../fonts/Akkurat-Normal.eot'), /* IE9 Compat Modes */
-		url('../fonts/Akkurat-Normal.ttf') format('truetype'), /* IE9 Compat Modes */ 
-		url('../fonts/Akkurat-Normal.woff') format('woff'); /* Pretty Modern Browsers */
+	src: 
+		url('font/Akkurat-Normal.ttf') format('truetype'), /* IE9 Compat Modes */ 
+		url('font/Akkurat-Normal.woff') format('woff'); /* Pretty Modern Browsers */
+		/*url('font/Akkurat-Normal.eot'), /* IE9 Compat Modes */
 }
 
 @font-face{ 
-	font-family: 'AkkuratLightPro'; 
-	src: url('../fonts/Akkurat-Light.eot'), /* IE9 Compat Modes */
-		url('../fonts/Akkurat-Light.ttf') format('truetype'), /* IE9 Compat Modes */ 
-		url('../fonts/Akkurat-Light.woff') format('woff'); /* Pretty Modern Browsers */
+	font-family: 'AkkuratLightPro';
+	src: 
+		url('font/Akkurat-Light.ttf') format('truetype'), /* IE9 Compat Modes */
+		url('font/Akkurat-Light.woff') format('woff'); /* Pretty Modern Browsers */
+		/*url('font/Akkurat-Light.eot'), /* IE9 Compat Modes */
 }
 
 .body {
@@ -468,7 +456,7 @@ margin-top: 12px;
 
 }
 
-.icona_tendina i:hover {
+/*.icona_tendina i:hover {
 color: #009999;
 }
 
@@ -482,7 +470,7 @@ color: #009999;
 
 .icona_assegna_contatti i:hover {
 color: #009999;
-}
+}*/
 
 .tendina_1_operatore .nomeEcognome {
 float: left;
@@ -594,6 +582,7 @@ font-family: Akkurat Light Pro;
 	position: absolute;
 	z-index: 1;
 	border-radius: 20px;
+	box-shadow: -20px 20px 20px #232323;
 }
 
 .contenitore_header_pp_operatore span {
@@ -657,7 +646,7 @@ font-family: Akkurat Light Pro;
 }
 
 .contenuti_sinistra_pp_selezione_campagne p {
-font-family: Akkurat Light Pro;
+	font-family: Akkurat Light Pro;
 	margin-top: 0px;
 	padding: 5px 0px 0px 5px;
 	margin: 0;
@@ -1138,17 +1127,29 @@ button[name="login"]:active {
 	z-index: 32;
 }
 
+.overlayContent {
+	position: absolute;
+  	margin-left: 40px;
+  	z-index: 33;
+	}
+
 .overlay {
-	position: fixed;
+	position: absolute;
 	height: 100%;
 	width: 100%;
 	z-index: 31;
 	top: 0;
 	left: 0;
-	background-color: black;
-	opacity: 0.7;
+	background-color: rgba(15,15,15,0.75);
 	display: block;
+  	color:violet;
 }
+
+.blur {
+	-webkit-filter: blur(7px) grayscale(50%);
+	/*transition: all 0.4s ease;*/
+}
+
 
 .hidden {display: none;}
 

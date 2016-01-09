@@ -19,7 +19,7 @@
         "incenteev/composer-parameter-handler": "~2.0",
         "friendsofsymfony/user-bundle": "~2.0@dev",
         "willdurand/propel-typehintable-behavior": "^1.0",
-        //"codemaster/mailup-bundle": "dev-master"
+        "taginnovationschool/codemaster-mailup": "dev-master"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"
@@ -42,12 +42,12 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
         ]
     },
-    /*"repositories": [
+    "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/taginnovationschool/codemaster-mailup-bundle"
+            "url": "https://github.com/taginnovationschool/codemaster-mailup"
         }
-    ],*/
+    ],
     "config": {
         "bin-dir": "bin"
     },

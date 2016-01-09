@@ -141,6 +141,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::creaChiamataAction',  '_route' => 'creachiamata',);
         }
 
+        // mostrachiamate
+        if ($pathinfo === '/mostrachiamate') {
+            return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::mostrachiamateAction',  '_route' => 'mostrachiamate',);
+        }
+
         // layout
         if ($pathinfo === '/layout') {
             return array (  '_controller' => 'AppBundle\\Controller\\PagineController::layoutAction',  '_route' => 'layout',);

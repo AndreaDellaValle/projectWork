@@ -41,7 +41,61 @@ class DefaultController extends Controller
         //'users' => $users,
         ]);
     }
-}
+
+    //inserire codice mailup QUI !
+//        $username = 'm76488';
+//        $password = 'codemaster1';
+//        
+//        $client = new MailUpClient($username, $password);
+//        $recipients = $client->getGroupRecipients(26);
+//        foreach ($recipients->Items as $key => $value) {
+//            //contrllo se i report scaricati esistono nel database
+//            $exist = false;
+//            $existingReports = $repository->findAll();
+//            $name = NULL;
+//            $campaign = NULL;
+//            foreach ($value->Fields as $key => $field) {
+//                if ($field->Description == 'name') {
+//                    $name = $field->Value;
+//                }
+//                if ($field->Description == 'Campagne') {
+//                    $campaign = $field->Value;
+//                }
+//            }
+//            foreach ($existingReports as $n => $existingReport) {
+//                if($existingReport->getEmail() == $value->Email && $existingReport->getCampaign() == $campaign) {
+//                    $exist = true;
+//                }
+//            }
+//            if(!$exist) {
+//                $counter = NULL;
+//                $operators = $repo->createQueryBuilder('o')
+//                    ->where('o.enabled = 1')
+//                    ->andWhere('o.status = 1')
+//                    ->andWhere('o.roles LIKE :role')
+//                    ->setParameter('role', '%ROLE_OPERATORE%')
+//                    ->getQuery()
+//                    ->getResult();
+//                foreach ($operators as $key => $operator) {
+//                    $counter[$operator->getId()] = count($operator->getReports());
+//                }
+//                asort($counter);
+//                $selectedOperator = $repo->find(array_keys($counter)[0]);
+//                $newReport = new Report;
+//                $newReport
+//                    ->setCampaign($campaign)
+//                    ->setName($name)
+//                    ->setPhone($value->MobileNumber)
+//                    ->setEmail($value->Email)
+//                    ->setDateTime(date_create_from_format('Y-m-d H:i', date('Y-m-d H:i')))
+//                    ->setOperator($selectedOperator)
+//                    ->setReply('Non chiamato')
+//                    ->setComment('');
+//                $em->persist($newReport);
+//                $em->flush();
+//                $em->clear();
+            }
+
 
  /**
   * @Route("/creachiamata", name="creachiamata")
@@ -78,8 +132,27 @@ class DefaultController extends Controller
             return $this->redirectToRoute('course_show', array('id' => $course->getId()));
         }
 
-        return $this->render('AppBundle:Course:create.html.twig', array(
+        return $this->render('AppBundle:create.html.twig', array(
             'form' => $form->createView()
         ));
  }
+
+     /**
+      * @Route("/mostrachiamate", name="mostrachiamate")
+      */
+     public function mostrachiamateAction($id)
+     {
+         $product = $this->getDoctrine()
+             ->getRepository('AppBundle:Chiamate')
+             ->find($id);
+
+         if (!$product) {
+             throw $this->createNotFoundException(
+                 'No product found for id '.$id
+             );
+         return $this->var_dump($product);
+         }
+
+     }
+
 }

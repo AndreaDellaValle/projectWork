@@ -28,6 +28,7 @@ return array(
     'Doctrine\\Common\\Cache\\' => array($vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache'),
     'Doctrine\\Bundle\\DoctrineCacheBundle\\' => array($vendorDir . '/doctrine/doctrine-cache-bundle'),
     'Doctrine\\Bundle\\DoctrineBundle\\' => array($vendorDir . '/doctrine/doctrine-bundle'),
+    'Codemaster\\MailUp\\' => array($vendorDir . '/taginnovationschool/codemaster-mailup/src'),
     'Codemaster\\Bundle\\' => array($vendorDir . '/codemaster/mailup-bundle/src/Codemaster/Bundle'),
     '' => array($baseDir . '/src'),
 );

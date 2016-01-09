@@ -15,8 +15,8 @@ class __TwigTemplate_bc3c8f25a85ab5e574154319ad91832da3160dcbd0afdc20f6b4d7c600c
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_a073281a1be0b8f175c40a92f18874044508e2b0556db9d1ce77558b3c56ea6a = $this->env->getExtension("native_profiler");
-        $__internal_a073281a1be0b8f175c40a92f18874044508e2b0556db9d1ce77558b3c56ea6a->enter($__internal_a073281a1be0b8f175c40a92f18874044508e2b0556db9d1ce77558b3c56ea6a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle::header.html.twig"));
+        $__internal_c9833b69f62288489219d8a98b9c4c8b1439c2101abf9dfdb35b6943d13d1244 = $this->env->getExtension("native_profiler");
+        $__internal_c9833b69f62288489219d8a98b9c4c8b1439c2101abf9dfdb35b6943d13d1244->enter($__internal_c9833b69f62288489219d8a98b9c4c8b1439c2101abf9dfdb35b6943d13d1244_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle::header.html.twig"));
 
         // line 1
         echo "<div class=\"contenitore_header cf\">
@@ -59,7 +59,7 @@ function checkTime(i) {
 </script>
 </div>";
         
-        $__internal_a073281a1be0b8f175c40a92f18874044508e2b0556db9d1ce77558b3c56ea6a->leave($__internal_a073281a1be0b8f175c40a92f18874044508e2b0556db9d1ce77558b3c56ea6a_prof);
+        $__internal_c9833b69f62288489219d8a98b9c4c8b1439c2101abf9dfdb35b6943d13d1244->leave($__internal_c9833b69f62288489219d8a98b9c4c8b1439c2101abf9dfdb35b6943d13d1244_prof);
 
     }
 
