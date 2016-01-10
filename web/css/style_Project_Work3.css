@@ -124,7 +124,7 @@ font-family: 'AkkuratLightPro';
 }
 
 .contenuti_sinistra_pp_selezione_campagne p {
-font-family: 'AkkuratLightPro';
+	font-family: 'AkkuratLightPro';
 	margin-top: 0px;
 	padding: 5px 0px 0px 5px;
 	margin: 0;
@@ -191,19 +191,6 @@ font-size: 15px;
 	padding: 0;
 	margin-top: 0;
 	display: inline-block;
-}
-.contattiAssegnatiOperatore a{
-	text-decoration: none;
-	color: #333;
-	width: 350px;
-	height: 28px;
-	}
-	
-.contattiAssegnatiOperatore a:hover {
-	background-color: blue;
-	color: white;
-	width: 350px;
-	height: 28px;
 }
 
 .titolo_contenuti_destra_pp {
@@ -312,6 +299,30 @@ button[name="avanti"]:hover {
 }
 
 button[name="avanti"]:active {
+	position:relative;
+	top:1px;
+}
+
+label[name="salva chiamata"] {
+	background-color:#44c767;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #18ab29;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Akkurat;
+	font-size:17px;
+	padding:6px 3px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	margin-left: 40px;
+}
+label[name="salva chiamata"]:hover {
+	background-color:darkgreen;
+}
+
+label[name="salva chiamata"]:active {
 	position:relative;
 	top:1px;
 }

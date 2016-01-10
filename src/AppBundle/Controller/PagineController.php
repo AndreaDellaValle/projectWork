@@ -145,10 +145,10 @@ class PagineController extends Controller
         $chiamata = new Chiamate();
 
         $form = $this->createFormBuilder($chiamata)
-            ->add('orario_inizio', 'datetime')
-            ->add('orario_fine', 'datetime')
-            /*->add('contatto', 'text')
-            ->add('campagna', 'text')*/
+            ->add('orario_inizio', 'datetime', array('label' => ''))
+            ->add('orario_fine', 'datetime', array('label' => ''))
+            //->add('contatto', 'textarea', array('label' => 'Note e appuntamenti'))
+            
             ->add('status', 'choice', array(
             'choices' => array('da chiamare','completato', 'da richiamare', 'contatto non valido')))
             ->add('feedback', 'choice', array(

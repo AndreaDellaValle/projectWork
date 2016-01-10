@@ -42,10 +42,13 @@ class DefaultController extends Controller
         );
     }
 
-    //codice mailup QUI !
+//  codice mailup QUI !
 //        $username = 'm76488';
 //        $password = 'codemaster1';
 //        
+//          $repository = $product = $this->getDoctrine()
+//            ->getRepository('AppBundle:Utenti')
+//            ->find(3);
 //        $client = new MailUpClient($username, $password);
 //        $recipients = $client->getGroupRecipients(26);
 //        foreach ($recipients->Items as $key => $value) {
@@ -69,28 +72,18 @@ class DefaultController extends Controller
 //            }
 //            if(!$exist) {
 //                $counter = NULL;
-//                $operators = $repo->createQueryBuilder('o')
-//                    ->where('o.enabled = 1')
-//                    ->andWhere('o.status = 1')
-//                    ->andWhere('o.roles LIKE :role')
-//                    ->setParameter('role', '%ROLE_OPERATORE%')
-//                    ->getQuery()
-//                    ->getResult();
-//                foreach ($operators as $key => $operator) {
-//                    $counter[$operator->getId()] = count($operator->getReports());
-//                }
-//                asort($counter);
-//                $selectedOperator = $repo->find(array_keys($counter)[0]);
-//                $newReport = new Report;
+//                $operator = $repo->find(4);
+//                
+//   
+//                $newReport = new Contatti;
 //                $newReport
-//                    ->setCampaign($campaign)
-//                    ->setName($name)
+//                    ->setCampagnaContatto($campaign)
+//                    ->setNomeContatto($name)
 //                    ->setPhone($value->MobileNumber)
 //                    ->setEmail($value->Email)
-//                    ->setDateTime(date_create_from_format('Y-m-d H:i', date('Y-m-d H:i')))
-//                    ->setOperator($selectedOperator)
-//                    ->setReply('Non chiamato')
-//                    ->setComment('');
+//                    //->setDateTime(date_create_from_format('Y-m-d H:i', date('Y-m-d H:i')))
+//                    ->setOperator($operator)
+//               
 //                $em->persist($newReport);
 //                $em->flush();
 //                $em->clear();
@@ -129,6 +122,7 @@ class DefaultController extends Controller
             $em->persist($chiamata);
             $em->flush();
 
+            //throw notice chiamata salvata
             return $this->redirectToRoute('course_show', array('id' => $course->getId()));
         }
 
