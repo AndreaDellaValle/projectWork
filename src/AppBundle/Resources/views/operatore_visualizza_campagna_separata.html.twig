@@ -1,0 +1,52 @@
+<link href="{{ asset('css/style_Project_Work3.css') }}" rel="stylesheet" type="text/css" charset="utf-8">
+<link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet" type="text/css">
+<script language="javascript" type="text/javascript" src="../js/datetimepick/datetimepicker.js">
+
+</script>
+	
+	
+
+	
+		
+		<div class="chiamata_contenitore_header_pp_operatore cf">
+			<span><i class="fa fa-phone fa-11x"></i><i> Campagna:</i></span><i><b> Christmas</b></i>
+			<i><span>&nbsp&nbsp Operatore:</span></i><i><b> {{ app.user.username }}</b></i>
+			<div class="info_chiamata_sinistra_pp_operatore">Informazioni contatto</div>
+				<div class="contenuti_chiamata_sinistra_pp_campagna">
+				<p class="nome_contatto"><b>Nome:</b><span class="evidenzia"> {{ listaContatti.getNomeContatto }}</span></p>
+				<p class="cognome_contatto"><b>Cognome:</b><span class="evidenzia"> {{ listaContatti.getCognomeContatto }}</span></p>
+				<p class="email_contatto"><b>E-mail:</b><span> {{ listaContatti.getEmailContatto }}</span></p>
+				<p class="num_tel_contatto"><b>Telefono:</b><span> {{ listaContatti.getNumeroTelefonoContatto }}</span></p>
+				<!--<p class="data_chiamata"><b>Storico Chiamate:</b><span>  28/09/2015</span></p>-->
+				<p class="feedback"><b>&nbsp&nbsp&nbsp&nbsp&nbspFEEDBACK</b></p>
+				
+	<!--				<legend>Positivi</legend> -->
+						{{ form_start(form) }}
+						{{ form_widget(form.feedback) }}
+						
+					
+						{{ form_end(form) }}
+
+						{{ form_start(form) }}
+						{{ form_widget(form.status) }}
+						
+					
+						{{ form_end(form) }}
+							
+				</div>
+
+			<div class="titolo_contenuti_destra_pp cf">Note e Appuntamenti</div>
+				
+				<!--<div class="contenuti_destra_pp_operatore">-->
+					<textarea name="testo" placeholder="aggiungi una nota"></textarea>
+				<!--</div>-->
+				<div class="calendario_appuntamento">
+					<input id="calendario" type="text" placeholder="fissa un appuntamento"><a href="javascript:NewCal('calendario','ddmmyyyy','true')"><img src="../assets/images/cal.gif" width="20" height="20" border="0" alt="Pick a date"></a>
+				</div>
+					<div class="azioni_chiamata">
+					Gestisci la chiamata:
+					</div>
+
+					<a href="#"><button type="submit" name="comincia_chiamata" value="avanti">Chiama</button></a>
+					<a href="#"class="popdown"><button type="submit" name="concludi_chiamata" value="annulla">Concludi telefonata</button></a>
+		</div>

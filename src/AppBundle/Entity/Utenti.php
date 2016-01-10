@@ -9,7 +9,7 @@ use FOS\UserBundle\Model\User as BaseUser;
  * Utenti
  *
  * @ORM\Table(name="cs_utenti")
- * @ORM\Entity(repositoryClass="AppBundle\Entity\UtentiRepository")
+ * @ORM\Entity
  */
 class Utenti extends BaseUser
 {
@@ -20,11 +20,7 @@ class Utenti extends BaseUser
      */
     protected $id;
 
-    public function __construct()
-    {
-        parent::__construct();
-        // your own logic
-    }
+    
 
     /**
      * @ORM\Column(name="nome", type="string", length=255, nullable=true)
@@ -35,6 +31,17 @@ class Utenti extends BaseUser
      * @ORM\Column(name="cognome", type="string", length=255, nullable=true)
      */
     protected $cognome;
+
+    /**
+     * @ORM\OneToMany(targetEntity="Contatti", mappedBy="operatoreContatto")
+     */
+    protected $contattiPerOgniOperatore;
+
+    public function __construct()
+    {
+        //parent::__construct();
+         $this->contattiPerOgniOperatore = new ArrayCollection();
+    }
 
 
     /**

@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Chiamate
  *
  * @ORM\Table(name="cs_chiamate")
- * @ORM\Entity(repositoryClass="AppBundle\Entity\ChiamateRepository")
+ * @ORM\Entity
  */
 class Chiamate
 {
@@ -38,7 +38,8 @@ class Chiamate
     /**
      * @var string
      *
-     * @ORM\Column(name="contatto", type="string", length=255)
+     * @ORM\ManyToOne(targetEntity="Contatti", inversedBy="chiamateContatto")
+     * @ORM\JoinColumn(name="contatto", referencedColumnName="id")
      */
     private $contatto;
 
@@ -48,6 +49,20 @@ class Chiamate
      * @ORM\Column(name="campagna", type="string", length=255)
      */
     private $campagna;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="feedback", type="string", length=255)
+     */
+    private $feedback;
+
+        /**
+     * @var string
+     *
+     * @ORM\Column(name="status", type="string", length=255)
+     */
+    private $status;
 
 
     /**
@@ -154,6 +169,54 @@ class Chiamate
     public function getCampagna()
     {
         return $this->campagna;
+    }
+
+    /**
+     * Set feedback
+     *
+     * @param string $campagna
+     *
+     * @return Chiamate
+     */
+    public function setFeedback($feedback)
+    {
+        $this->feedback = $feedback;
+
+        return $this;
+    }
+
+    /**
+     * Get feedback
+     *
+     * @return string
+     */
+    public function getFeedback()
+    {
+        return $this->feedback;
+    }
+
+    /**
+     * Set status
+     *
+     * @param string $status
+     *
+     * @return Chiamate
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+
+        return $this;
+    }
+
+    /**
+     * Get status
+     *
+     * @return string
+     */
+    public function getStatus()
+    {
+        return $this->status;
     }
 }
 

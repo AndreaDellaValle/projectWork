@@ -36,13 +36,13 @@ class DefaultController extends Controller
             $user = $form->getData();
             return $this->render('AppBundle::login.html.twig', [
             'form' => $form->createView(),
-            'path' => $_SERVER['SCRIPT_NAME']
-            //$this->addFlash('notice', 'Login Effettuata');
+            'path' => $_SERVER['SCRIPT_NAME']],
+            $this->addFlash('notice', 'Login Effettuata')
         //'users' => $users,
-        ]);
+        );
     }
 
-    //inserire codice mailup QUI !
+    //codice mailup QUI !
 //        $username = 'm76488';
 //        $password = 'codemaster1';
 //        
@@ -153,6 +153,26 @@ class DefaultController extends Controller
          return $this->var_dump($product);
          }
 
+     }
+
+     /**
+      * @Route("/listaCampagne", name="listaCampagne")
+      */
+     public function listaCampagneAction()
+     {
+        $listaCampagne = $this->getDoctrine()
+            ->getRepository('AppBundle:Contatti')
+            ->findAll();
+
+         if (!$listaCampagne) {
+             throw $this->createNotFoundException(
+                 'non trovo campagne qui'
+             );
+         
+         }
+         return $this->render ('AppBundle::operatore_campagne_attive.html.twig',
+            ['listaCampagne' => $listaCampagne,
+            ]);
      }
 
 }

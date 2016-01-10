@@ -15,7 +15,7 @@
 {% endblock %}
 {% block contenuti %}
 
-		<!--<aside class="contenitore_principale cf">-->
+
 				<div class="titolo_contenuti">Campagne attive
 
 				</div>
@@ -25,10 +25,11 @@
 					</div>
 					<nav class="contenitore_elenco_operatori">
 						
+					{% for singolaCampagna in listaCampagne %}
 						<a href="operatore_visualizza_campagna">
 							<div class="tendina_1_operatore cf">
 								<div class="icona_tendina"><i class="fa fa-flag fa-11x"></i></div>
-								<div class="nomeEcognome"><i>Christmas</br>Vodafone</i></div>
+								<div class="nomeEcognome">{{ singolaCampagna.getCampagnaContatto() }}</div>
 								<div>
 								
 										<div class="contenitore_icone">
@@ -41,43 +42,8 @@
 
 							</div>
 						</a>
-
-						<a href="operatore_visualizza_campagna">
-							<div class="tendina_1_operatore cf">
-								<div class="icona_tendina"><i class="fa fa-flag fa-11x"></i></div>
-								<div class="nomeEcognome"><i>Christmas</br>Vodafone</i></div>
-								<div>
-								
-										<div class="contenitore_icone">
-
-										<div class="icona_rimuovere"><i class="fa fa-check-circle fa-1x"></i></div>
-										<div class="icona_pausa"><i class="fa fa-bullhorn fa-1x"></i></div>
-										<div class="icona_assegna_contatti"><i class=""></i></div>
-										</div>
-								</div>
-
-							</div>
-						</a>
-
-
-						<a href="operatore_visualizza_campagna">
-							<div class="tendina_1_operatore cf">
-								<div class="icona_tendina"><i class="fa fa-flag fa-11x"></i></div>
-								<div class="nomeEcognome"><i>Christmas</br>Vodafone</i></div>
-								<div>
-								
-										<div class="contenitore_icone">
-
-										<div class="icona_rimuovere"><i class="fa fa-check-circle fa-1x"></i></div>
-										<div class="icona_pausa"><i class="fa fa-bullhorn fa-1x"></i></div>
-										<div class="icona_assegna_contatti"><i class=""></i></div>
-										</div>
-								</div>
-
-							</div>
-						</a>
+					{% endfor %}
 
 					</nav>
-					
-		<!--</aside>-->
+
 {% endblock %}

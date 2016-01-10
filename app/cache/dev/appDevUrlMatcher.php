@@ -146,9 +146,17 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::mostrachiamateAction',  '_route' => 'mostrachiamate',);
         }
 
-        // layout
-        if ($pathinfo === '/layout') {
-            return array (  '_controller' => 'AppBundle\\Controller\\PagineController::layoutAction',  '_route' => 'layout',);
+        if (0 === strpos($pathinfo, '/l')) {
+            // listaCampagne
+            if ($pathinfo === '/listaCampagne') {
+                return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::listaCampagneAction',  '_route' => 'listaCampagne',);
+            }
+
+            // layout
+            if ($pathinfo === '/layout') {
+                return array (  '_controller' => 'AppBundle\\Controller\\PagineController::layoutAction',  '_route' => 'layout',);
+            }
+
         }
 
         if (0 === strpos($pathinfo, '/admin_')) {
@@ -200,9 +208,17 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'AppBundle\\Controller\\PagineController::dettagli_campagnaAction',  '_route' => 'dettagli_campagna',);
         }
 
-        // operatore_visualizza_campagna
-        if ($pathinfo === '/operatore_visualizza_campagna') {
-            return array (  '_controller' => 'AppBundle\\Controller\\PagineController::operatore_visualizza_campagnaAction',  '_route' => 'operatore_visualizza_campagna',);
+        if (0 === strpos($pathinfo, '/operatore_visualizza_campagna')) {
+            // operatore_visualizza_campagna
+            if ($pathinfo === '/operatore_visualizza_campagna') {
+                return array (  '_controller' => 'AppBundle\\Controller\\PagineController::operatore_visualizza_campagnaAction',  '_route' => 'operatore_visualizza_campagna',);
+            }
+
+            // operatore_visualizza_campagna_separata
+            if (0 === strpos($pathinfo, '/operatore_visualizza_campagna_separata') && preg_match('#^/operatore_visualizza_campagna_separata/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'operatore_visualizza_campagna_separata')), array (  '_controller' => 'AppBundle\\Controller\\PagineController::operatore_visualizza_campagna_separataAction',));
+            }
+
         }
 
         // dettagli_contatto

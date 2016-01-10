@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Contatti
  *
- * @ORM\Table()
+ * @ORM\Table(name="contatti")
  * @ORM\Entity
  */
 class Contatti
@@ -52,7 +52,8 @@ class Contatti
     /**
      * @var string
      *
-     * @ORM\Column(name="operatoreContatto", type="string", length=255, nullable=true)
+     * @ORM\ManyToOne(targetEntity="Utenti", inversedBy="contattiPerOgniOperatore")
+     * @ORM\JoinColumn(name="operatoreContatto", referencedColumnName="id")
      */
     private $operatoreContatto;
 
@@ -62,6 +63,24 @@ class Contatti
      * @ORM\Column(name="campagnaContatto", type="string", length=255, nullable=true)
      */
     private $campagnaContatto;
+
+    /**
+     * @ORM\OneToMany(targetEntity="Chiamate", mappedBy="contatto")
+     */
+    protected $chiamateContatto;
+
+    public function __construct()
+    {
+        //parent::__construct();
+         $this->chiamateContatto = new ArrayCollection();
+    }
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="numeroTelefonoContatto", type="string", length=255, nullable=true)
+     */
+    private $numeroTelefonoContatto;
 
 
     /**
@@ -216,6 +235,54 @@ class Contatti
     public function getCampagnaContatto()
     {
         return $this->campagnaContatto;
+    }
+
+    /**
+     * Set chiamateContatto
+     *
+     * @param string $chiamateContatto
+     *
+     * @return Contatti
+     */
+    public function setChiamateContatto($chiamateContatto)
+    {
+        $this->chiamateContatto = $chiamateContatto;
+
+        return $this;
+    }
+
+    /**
+     * Get chiamateContatto
+     *
+     * @return string
+     */
+    public function getChiamateContatto()
+    {
+        return $this->chiamateContatto;
+    }
+
+    /**
+     * Set numeroTelefonoContatto
+     *
+     * @param string $numeroTelefonoContatto
+     *
+     * @return Contatti
+     */
+    public function setNumeroTelenfonoContatto($numeroTelefonoContatto)
+    {
+        $this->numeroTelefonoContatto = $numeroTelefonoContatto;
+
+        return $this;
+    }
+
+    /**
+     * Get numeroTelefonoContatto
+     *
+     * @return string
+     */
+    public function getNumeroTelefonoContatto()
+    {
+        return $this->numeroTelefonoContatto;
     }
 }
 

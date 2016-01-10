@@ -8,6 +8,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 //use FOS\UserBundle\Controller\RegistrationController as BaseController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
+use AppBundle\Entity\Chiamate;
 
 class PagineController extends Controller
 {
@@ -79,9 +80,20 @@ class PagineController extends Controller
      */
     public function operatore_campagne_attiveAction(Request $request)
     {
-        // pagina index operatore
-        return $this->render('AppBundle::operatore_campagne_attive.html.twig');
-    }
+        $listaCampagne = $this->getDoctrine()
+            ->getRepository('AppBundle:Contatti')
+            ->findAll();
+
+         if (!$listaCampagne) {
+             throw $this->createNotFoundException(
+                 'non trovo campagne qui'
+             );
+         
+         }
+         return $this->render ('AppBundle::operatore_campagne_attive.html.twig',
+            ['listaCampagne' => $listaCampagne,
+            ]);
+     }
 
     /**
      * @Route("/operatore_campagne_passate", name="operatore_campagne_passate")
@@ -105,10 +117,63 @@ class PagineController extends Controller
      * @Route("/operatore_visualizza_campagna", name="operatore_visualizza_campagna")
      */
     public function operatore_visualizza_campagnaAction(Request $request)
-    {
-        // pagina index operatore
-        return $this->render('AppBundle::operatore_visualizza_campagna.html.twig');
-    }
+     {
+        $listaContatti = $this->getDoctrine()
+            ->getRepository('AppBundle:Contatti')
+            ->findAll();
+
+         if (!$listaContatti) {
+             throw $this->createNotFoundException(
+                 'non trovo contatti qui'
+             );
+         
+         }
+         return $this->render ('AppBundle::operatore_visualizza_campagna.html.twig',
+            ['listaContatti' => $listaContatti,
+            ]);
+     }
+
+    /**
+     * @Route("/operatore_visualizza_campagna_separata/{id}", name="operatore_visualizza_campagna_separata")
+     */
+    public function operatore_visualizza_campagna_separataAction(Request $request, $id)
+     {
+        $listaContatti = $this->getDoctrine()
+            ->getRepository('AppBundle:Contatti')
+            ->find($id);
+
+        $chiamata = new Chiamate();
+
+        $form = $this->createFormBuilder($chiamata)
+            ->add('orario_inizio', 'datetime')
+            ->add('orario_fine', 'datetime')
+            /*->add('contatto', 'text')
+            ->add('campagna', 'text')*/
+            ->add('status', 'choice', array(
+            'choices' => array('da chiamare','completato', 'da richiamare', 'contatto non valido')))
+            ->add('feedback', 'choice', array(
+            'choices' => array('non contattato','risposta positiva','prezzo elevato', 'scarsa attrattiva', 'mancanze funzionali', 'offerta non chiara')))
+            ->add('save', 'submit', array('label' => 'salva chiamata'))
+            ->getForm();
+
+        $form->handleRequest($request);
+
+        if($form->isValid())
+        {
+            $em = $this->getDoctrine()->getManager();
+
+            $em->persist($chiamata);
+            $em->flush();
+
+            return $this->redirectToRoute('operatore_visualizza_campagna');
+        }
+
+         
+         return $this->render ('AppBundle::operatore_visualizza_campagna_separata.html.twig',
+            ['listaContatti' => $listaContatti,
+            'form' => $form->createView()
+            ]);
+     }
 
     /**
      * @Route("/dettagli_contatto", name="dettagli_contatto")
@@ -127,9 +192,13 @@ class PagineController extends Controller
         $rep = $this->getDoctrine()->getRepository('AppBundle:Utenti');
 
         $users = $rep->findAll();
+        $listaCampagne = $this->getDoctrine()
+            ->getRepository('AppBundle:Contatti')
+            ->find(3);
 
         return $this->render('AppBundle::example.html.twig', [
             'users' => $users,
+            'campagne' => $listaCampagne,
             ]);
     }
 
