@@ -3,6 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Contatti
@@ -268,7 +269,7 @@ class Contatti
      *
      * @return Contatti
      */
-    public function setNumeroTelenfonoContatto($numeroTelefonoContatto)
+    public function setNumeroTelefonoContatto($numeroTelefonoContatto)
     {
         $this->numeroTelefonoContatto = $numeroTelefonoContatto;
 

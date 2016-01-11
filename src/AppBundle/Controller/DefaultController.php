@@ -40,96 +40,12 @@ class DefaultController extends Controller
             $this->addFlash('notice', 'Login Effettuata')
         //'users' => $users,
         );
-    }
-
-//  codice mailup QUI !
-//        $username = 'm76488';
-//        $password = 'codemaster1';
-//        
-//          $repository = $product = $this->getDoctrine()
-//            ->getRepository('AppBundle:Utenti')
-//            ->find(3);
-//        $client = new MailUpClient($username, $password);
-//        $recipients = $client->getGroupRecipients(26);
-//        foreach ($recipients->Items as $key => $value) {
-//            //contrllo se i report scaricati esistono nel database
-//            $exist = false;
-//            $existingReports = $repository->findAll();
-//            $name = NULL;
-//            $campaign = NULL;
-//            foreach ($value->Fields as $key => $field) {
-//                if ($field->Description == 'name') {
-//                    $name = $field->Value;
-//                }
-//                if ($field->Description == 'Campagne') {
-//                    $campaign = $field->Value;
-//                }
-//            }
-//            foreach ($existingReports as $n => $existingReport) {
-//                if($existingReport->getEmail() == $value->Email && $existingReport->getCampaign() == $campaign) {
-//                    $exist = true;
-//                }
-//            }
-//            if(!$exist) {
-//                $counter = NULL;
-//                $operator = $repo->find(4);
-//                
-//   
-//                $newReport = new Contatti;
-//                $newReport
-//                    ->setCampagnaContatto($campaign)
-//                    ->setNomeContatto($name)
-//                    ->setPhone($value->MobileNumber)
-//                    ->setEmail($value->Email)
-//                    //->setDateTime(date_create_from_format('Y-m-d H:i', date('Y-m-d H:i')))
-//                    ->setOperator($operator)
-//               
-//                $em->persist($newReport);
-//                $em->flush();
-//                $em->clear();
-            }
-
-
- /**
-  * @Route("/creachiamata", name="creachiamata")
-  */
- public function creaChiamataAction(Request $request/*, $id*/)
- {
-     //$repository = this->getDoctrine()->getRepository('AppBundle/Entity/ChiamateRepository');
-
-     //$report = $repository->find($id);
-        
-        $chiamata = new Chiamata();
-
-        $form = $this->createFormBuilder($chiamata)
-            ->add('orario_inizio', 'date')
-            ->add('orario_fine', 'date')
-            ->add('contatto', 'text')
-            ->add('campagna', 'text')
-            /*->add('feedback', 'entity', array(
-                'class' => 'AppBundle:Teacher',
-                'choice_label' => 'fullName',
-            ))*/
-            ->add('save', 'submit', array('label' => 'Create chiamata'))
-            ->getForm();
-
-        $form->handleRequest($request);
-
-        if($form->isValid())
-        {
-            $em = $this->getDoctrine()->getManager();
-
-            $em->persist($chiamata);
-            $em->flush();
-
-            //throw notice chiamata salvata
-            return $this->redirectToRoute('course_show', array('id' => $course->getId()));
         }
 
-        return $this->render('AppBundle:create.html.twig', array(
-            'form' => $form->createView()
-        ));
- }
+//chiude il foreach
+    }//chiude loginAction
+//}chiude classDefault controller
+
 
      /**
       * @Route("/mostrachiamate", name="mostrachiamate")

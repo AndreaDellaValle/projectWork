@@ -9,6 +9,8 @@ use Symfony\Component\HttpFoundation\Request;
 //use FOS\UserBundle\Controller\RegistrationController as BaseController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use AppBundle\Entity\Chiamate;
+use AppBundle\Entity\Contatti;
+use Codemaster\MailUp\HttpClient\MailUpClient;
 
 class PagineController extends Controller
 {
@@ -86,10 +88,63 @@ class PagineController extends Controller
 
          if (!$listaCampagne) {
              throw $this->createNotFoundException(
-                 'non trovo campagne qui'
+                 'ops! non trovo campagne di mailup qui'
              );
          
          }
+
+                 //codice mailup QUI !
+        $username = 'm76488';
+        $password = 'codemaster1';
+        
+          $repository = $product = $this->getDoctrine()
+            ->getRepository('AppBundle:Utenti')
+            ->find(3);
+        $client = new MailUpClient($username, $password);
+        $recipients = $client->getGroupRecipients(26);
+        foreach ($recipients->Items as $key => $value) {
+          //controllo se i report scaricati esistono nel database
+//            $exist = false;
+//            $existingReports = $repository->findAll();
+            $name = NULL;
+            $campaign = NULL;
+            foreach ($value->Fields as $key => $field) {
+                if ($field->Description == 'name') {
+                    $name = $field->Value;
+                }
+                if ($field->Description == 'Campagne') {
+                    $campaign = $field->Value;
+                }
+            }
+//            foreach ($existingReports as $n => $existingReport) {
+//                if($existingReport->getEmail() == $value->Email && $existingReport->getCampaign() == $campaign) {
+//                    $exist = true;
+//                }
+//            }
+            //if(!$exist) {
+                $counter = NULL;
+                $operator = $this->getDoctrine()
+            ->getRepository('AppBundle:Utenti')
+            ->find(3);
+                
+   
+                $newReport = new Contatti;
+                $newReport
+                    ->setCampagnaContatto($campaign)
+                    ->setNomeContatto($name)
+                    ->setNumeroTelefonoContatto($value->MobileNumber)
+                    ->setEmailContatto($value->Email)
+                    //->setDateTime(date_create_from_format('Y-m-d H:i', date('Y-m-d H:i')))
+                    ->setOperatoreContatto($operator);
+
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($newReport);
+                $em->flush();
+                $em->clear();
+                //var_dump ($newReport);die;
+            }
+        
+
          return $this->render ('AppBundle::operatore_campagne_attive.html.twig',
             ['listaCampagne' => $listaCampagne,
             ]);
