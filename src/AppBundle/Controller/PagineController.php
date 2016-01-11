@@ -6,7 +6,6 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-//use FOS\UserBundle\Controller\RegistrationController as BaseController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use AppBundle\Entity\Chiamate;
 use AppBundle\Entity\Contatti;
@@ -82,30 +81,21 @@ class PagineController extends Controller
      */
     public function operatore_campagne_attiveAction(Request $request)
     {
-        $listaCampagne = $this->getDoctrine()
-            ->getRepository('AppBundle:Contatti')
-            ->findAll();
-
-         if (!$listaCampagne) {
-             throw $this->createNotFoundException(
-                 'ops! non trovo campagne di mailup qui'
-             );
-         
-         }
+        
 
                  //codice mailup QUI !
         $username = 'm76488';
         $password = 'codemaster1';
         
-          $repository = $product = $this->getDoctrine()
-            ->getRepository('AppBundle:Utenti')
-            ->find(3);
+          
         $client = new MailUpClient($username, $password);
         $recipients = $client->getGroupRecipients(26);
         foreach ($recipients->Items as $key => $value) {
-          //controllo se i report scaricati esistono nel database
-//            $exist = false;
-//            $existingReports = $repository->findAll();
+        //controllo se i report scaricati esistono nel database
+            $exist = false;
+            $existingReports = $this->getDoctrine()
+                ->getRepository('AppBundle:Contatti')
+                ->findAll();
             $name = NULL;
             $campaign = NULL;
             foreach ($value->Fields as $key => $field) {
@@ -116,12 +106,12 @@ class PagineController extends Controller
                     $campaign = $field->Value;
                 }
             }
-//            foreach ($existingReports as $n => $existingReport) {
-//                if($existingReport->getEmail() == $value->Email && $existingReport->getCampaign() == $campaign) {
-//                    $exist = true;
-//                }
-//            }
-            //if(!$exist) {
+            foreach ($existingReports as $n => $existingReport) {
+                if($existingReport->getEmailContatto() == $value->Email && $existingReport->getCampagnaContatto() == $campaign) {
+                    $exist = true;
+                }
+            }
+            if(!$exist) {
                 $counter = NULL;
                 $operator = $this->getDoctrine()
             ->getRepository('AppBundle:Utenti')
@@ -143,7 +133,18 @@ class PagineController extends Controller
                 $em->clear();
                 //var_dump ($newReport);die;
             }
-        
+        }
+
+        $listaCampagne = $this->getDoctrine()
+            ->getRepository('AppBundle:Contatti')
+            ->findAll();
+
+         if (!$listaCampagne) {
+             throw $this->createNotFoundException(
+                 'ops! non trovo campagne di mailup qui'
+             );
+         
+         }
 
          return $this->render ('AppBundle::operatore_campagne_attive.html.twig',
             ['listaCampagne' => $listaCampagne,
@@ -179,7 +180,7 @@ class PagineController extends Controller
 
          if (!$listaContatti) {
              throw $this->createNotFoundException(
-                 'non trovo contatti qui'
+                 'non trovo contatti di mailup qui'
              );
          
          }
@@ -200,15 +201,16 @@ class PagineController extends Controller
         $chiamata = new Chiamate();
 
         $form = $this->createFormBuilder($chiamata)
-            ->add('orario_inizio', 'datetime', array('label' => ''))
-            ->add('orario_fine', 'datetime', array('label' => ''))
-            //->add('contatto', 'textarea', array('label' => 'Note e appuntamenti'))
-            
             ->add('status', 'choice', array(
             'choices' => array('da chiamare','completato', 'da richiamare', 'contatto non valido')))
+            ->add('orario_inizio', 'datetime', array('label' => ''))
+            ->add('orario_fine', 'datetime', array('label' => ''))
+            //->add('contatto', 'textarea', array('label' => 'Note e appuntamenti', 'attr' => ['class' => 'textarea']))
+            
             ->add('feedback', 'choice', array(
             'choices' => array('non contattato','risposta positiva','prezzo elevato', 'scarsa attrattiva', 'mancanze funzionali', 'offerta non chiara')))
-            ->add('save', 'submit', array('label' => 'salva chiamata'))
+            
+            ->add('save', 'submit', array('label' => 'salva chiamata', 'attr' => ['class' => 'comincia_chiamata']))
             ->getForm();
 
         $form->handleRequest($request);

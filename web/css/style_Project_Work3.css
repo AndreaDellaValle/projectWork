@@ -441,7 +441,7 @@ button[name="stampa_report_operatore"]:active {
 	position:relative;
 	top:1px;
 }
-button[name="comincia_chiamata"] {
+button.comincia_chiamata {
 	background-color:#44c767;
 	-moz-border-radius:5px;
 	-webkit-border-radius:10px;
@@ -457,16 +457,16 @@ button[name="comincia_chiamata"] {
 	margin-left: 60px;
 }
 
-button[name="comincia_chiamata"]:hover {
+button.comincia_chiamata:hover {
 	background-color:darkgreen;
 }
 
-button[name="comincia_chiamata"]:active {
+button.comincia_chiamata:active {
 	position:relative;
 	top:1px;
 }
 
-button[name="concludi_chiamata"] {
+button.concludi_chiamata {
 	background-color:red;
 	-moz-border-radius:5px;
 	-webkit-border-radius:10px;
@@ -489,10 +489,10 @@ button[name="concludi_chiamata"] {
 	padding-right: 30px;
 }
 
-button[name="concludi_chiamata"]:hover {
+button.concludi_chiamata:hover {
 	background-color:darkred;
 }
-button[name="concludi_chiamata"]:active {
+button.concludi_chiamata:active {
 	position:relative;
 	top:1px;
 }
@@ -601,13 +601,33 @@ textarea {
 }
 
 
+.overlayContent {
+	position: absolute;
+  	margin-left: 40px;
+  	z-index: 33;
+	}
 
+.overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 31;
+	top: 0;
+	left: 0;
+	background-color: rgba(15,15,15,0.75);
+	display: block;
+  	color:violet;
+}
 
+label.required {
+	font-family:Akkurat;
+	font-size: 15px;
+}
 
-
-
-
-
+.feedback {
+	font-family:Akkurat;
+	font-size: 15px;
+}
 
 
 

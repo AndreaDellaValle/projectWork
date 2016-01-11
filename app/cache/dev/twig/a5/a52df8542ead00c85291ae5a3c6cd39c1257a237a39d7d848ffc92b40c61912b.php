@@ -15,12 +15,12 @@ class __TwigTemplate_bc3c8f25a85ab5e574154319ad91832da3160dcbd0afdc20f6b4d7c600c
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_c9833b69f62288489219d8a98b9c4c8b1439c2101abf9dfdb35b6943d13d1244 = $this->env->getExtension("native_profiler");
-        $__internal_c9833b69f62288489219d8a98b9c4c8b1439c2101abf9dfdb35b6943d13d1244->enter($__internal_c9833b69f62288489219d8a98b9c4c8b1439c2101abf9dfdb35b6943d13d1244_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle::header.html.twig"));
+        $__internal_857a76a7378ecddbe207dd0fc32de811323b70e589aab71039750aa11c301243 = $this->env->getExtension("native_profiler");
+        $__internal_857a76a7378ecddbe207dd0fc32de811323b70e589aab71039750aa11c301243->enter($__internal_857a76a7378ecddbe207dd0fc32de811323b70e589aab71039750aa11c301243_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle::header.html.twig"));
 
         // line 1
         echo "<div class=\"contenitore_header cf\">
-\t\t<p class = \"logo\"><a href=\"admin_index\"><img src= \"";
+\t\t<p class = \"logo\"><a href=\"#\"><img src= \"";
         // line 2
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/logo_bianco.png"), "html", null, true);
         echo "\" width=\"100\" height=\"40\"></a></p>
@@ -59,7 +59,7 @@ function checkTime(i) {
 </script>
 </div>";
         
-        $__internal_c9833b69f62288489219d8a98b9c4c8b1439c2101abf9dfdb35b6943d13d1244->leave($__internal_c9833b69f62288489219d8a98b9c4c8b1439c2101abf9dfdb35b6943d13d1244_prof);
+        $__internal_857a76a7378ecddbe207dd0fc32de811323b70e589aab71039750aa11c301243->leave($__internal_857a76a7378ecddbe207dd0fc32de811323b70e589aab71039750aa11c301243_prof);
 
     }
 
@@ -79,7 +79,7 @@ function checkTime(i) {
     }
 }
 /* <div class="contenitore_header cf">*/
-/* 		<p class = "logo"><a href="admin_index"><img src= "{{ asset ('img/logo_bianco.png') }}" width="100" height="40"></a></p>*/
+/* 		<p class = "logo"><a href="#"><img src= "{{ asset ('img/logo_bianco.png') }}" width="100" height="40"></a></p>*/
 /* 			<div class="header_info">*/
 /* 				<p class = "admin"><span class="scrittaAdmin">Utente:</span> {{ app.user.username }}</p>*/
 /* 				<p id = "dataEora"></p>*/

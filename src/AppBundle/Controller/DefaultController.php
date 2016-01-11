@@ -24,7 +24,7 @@ class DefaultController extends Controller
     }
 
     if ($securityContext->isGranted('ROLE_USER')) {
-        return new RedirectResponse($router->generate('operatore_index'), 307);
+        return new RedirectResponse($router->generate('operatore_campagne_attive'), 307);
     }
 
         $form = $this->container->get('fos_user.registration.form');

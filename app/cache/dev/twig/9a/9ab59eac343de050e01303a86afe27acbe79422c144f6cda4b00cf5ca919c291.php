@@ -22,49 +22,47 @@ class __TwigTemplate_218da88e13d6bab0f9dbd08bd541eed5b209f62df4b01a0c1cbd3fa885f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_b7c4934b522c4cfe20958a219b4323f7e0033fcac1ae013ed9060a90cde853b6 = $this->env->getExtension("native_profiler");
-        $__internal_b7c4934b522c4cfe20958a219b4323f7e0033fcac1ae013ed9060a90cde853b6->enter($__internal_b7c4934b522c4cfe20958a219b4323f7e0033fcac1ae013ed9060a90cde853b6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle::operatore_campagne_attive.html.twig"));
+        $__internal_693cfdf830e91afbdfbd01dd0ccaf8ad8d050950a49e072f76994ca92db970d8 = $this->env->getExtension("native_profiler");
+        $__internal_693cfdf830e91afbdfbd01dd0ccaf8ad8d050950a49e072f76994ca92db970d8->enter($__internal_693cfdf830e91afbdfbd01dd0ccaf8ad8d050950a49e072f76994ca92db970d8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle::operatore_campagne_attive.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_b7c4934b522c4cfe20958a219b4323f7e0033fcac1ae013ed9060a90cde853b6->leave($__internal_b7c4934b522c4cfe20958a219b4323f7e0033fcac1ae013ed9060a90cde853b6_prof);
+        $__internal_693cfdf830e91afbdfbd01dd0ccaf8ad8d050950a49e072f76994ca92db970d8->leave($__internal_693cfdf830e91afbdfbd01dd0ccaf8ad8d050950a49e072f76994ca92db970d8_prof);
 
     }
 
     // line 3
     public function block_menu($context, array $blocks = array())
     {
-        $__internal_9dbcce4e839fe8f84ec73e59910d159d994ac9e8e0700eb88dfd1318053609f7 = $this->env->getExtension("native_profiler");
-        $__internal_9dbcce4e839fe8f84ec73e59910d159d994ac9e8e0700eb88dfd1318053609f7->enter($__internal_9dbcce4e839fe8f84ec73e59910d159d994ac9e8e0700eb88dfd1318053609f7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "menu"));
+        $__internal_f203db3080bfe9d0a7efed578ac2f90b2e0dcbcf399b2647c62f270bb27c6d8d = $this->env->getExtension("native_profiler");
+        $__internal_f203db3080bfe9d0a7efed578ac2f90b2e0dcbcf399b2647c62f270bb27c6d8d->enter($__internal_f203db3080bfe9d0a7efed578ac2f90b2e0dcbcf399b2647c62f270bb27c6d8d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "menu"));
 
         // line 4
         echo "
 \t\t<nav class=\"contenitore_menu\">
-\t\t\t<p class=\"home\"><a href=\"operatore_index\">HOME</a></p>
-\t\t\t<!--<p class=\"aziende\"><a href=\"http://localhost/PROJECTWORK/Admin_aziende.html\">AZIENDE</a></p>
-\t\t\t<p class=\"contatti\"><a href=\"http://localhost/PROJECTWORK/-----------.html\">CONTATTI</a></p>-->
-\t\t\t<p class=\"campagne\"><a href=\"operatore_campagne_attive\">CAMPAGNE ATTIVE</a></p>
-<!--\t\t\t<p class=\"operatori\"><a href=\"http://localhost/PROJECTWORK/Admin_operatori.html\">OPERATORI</a></p>
-\t\t\t<p class=\"report\"><a href=\"http://localhost/PROJECTWORK/----------.html\">REPORT</a></p> -->
-\t\t\t<p class=\"campagne\"><a href=\"operatore_campagne_passate\">CAMPAGNE CONCLUSE</a></p>
+\t\t\t<!--<p class=\"home\"><a href=\"operatore_index\">HOME</a></p>
+\t\t\t-->
+\t\t\t<p class=\"campagne\"><a href=\"operatore_campagne_attive\">CAMPAGNE</a></p>
+
+\t\t\t<!--<p class=\"campagne\"><a href=\"operatore_campagne_passate\">CAMPAGNE CONCLUSE</a></p>-->
 \t\t</nav>
 
 ";
         
-        $__internal_9dbcce4e839fe8f84ec73e59910d159d994ac9e8e0700eb88dfd1318053609f7->leave($__internal_9dbcce4e839fe8f84ec73e59910d159d994ac9e8e0700eb88dfd1318053609f7_prof);
+        $__internal_f203db3080bfe9d0a7efed578ac2f90b2e0dcbcf399b2647c62f270bb27c6d8d->leave($__internal_f203db3080bfe9d0a7efed578ac2f90b2e0dcbcf399b2647c62f270bb27c6d8d_prof);
 
     }
 
-    // line 16
+    // line 14
     public function block_contenuti($context, array $blocks = array())
     {
-        $__internal_6597d6df3ae4b36a977998a6715f38fd8c77cba054e1d8d041d0f09cc16864cd = $this->env->getExtension("native_profiler");
-        $__internal_6597d6df3ae4b36a977998a6715f38fd8c77cba054e1d8d041d0f09cc16864cd->enter($__internal_6597d6df3ae4b36a977998a6715f38fd8c77cba054e1d8d041d0f09cc16864cd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "contenuti"));
+        $__internal_bd066c01f88d75cbafe45bf6e4ac2532866c707ce2d6c1ab651edee3572d865e = $this->env->getExtension("native_profiler");
+        $__internal_bd066c01f88d75cbafe45bf6e4ac2532866c707ce2d6c1ab651edee3572d865e->enter($__internal_bd066c01f88d75cbafe45bf6e4ac2532866c707ce2d6c1ab651edee3572d865e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "contenuti"));
 
-        // line 17
+        // line 15
         echo "
 
-\t\t\t\t<div class=\"titolo_contenuti\">Campagne attive
+\t\t\t\t<div class=\"titolo_contenuti\">Campagne 
 
 \t\t\t\t</div>
 \t\t\t\t\t<div class=\"informazioni_operatori_campagne cf\">
@@ -74,16 +72,16 @@ class __TwigTemplate_218da88e13d6bab0f9dbd08bd541eed5b209f62df4b01a0c1cbd3fa885f
 \t\t\t\t\t<nav class=\"contenitore_elenco_operatori\">
 \t\t\t\t\t\t
 \t\t\t\t\t";
-        // line 28
+        // line 26
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["listaCampagne"]) ? $context["listaCampagne"] : $this->getContext($context, "listaCampagne")));
         foreach ($context['_seq'] as $context["_key"] => $context["singolaCampagna"]) {
-            // line 29
+            // line 27
             echo "\t\t\t\t\t\t<a href=\"operatore_visualizza_campagna\">
 \t\t\t\t\t\t\t<div class=\"tendina_1_operatore cf\">
 \t\t\t\t\t\t\t\t<div class=\"icona_tendina\"><i class=\"fa fa-flag fa-11x\"></i></div>
 \t\t\t\t\t\t\t\t<div class=\"nomeEcognome\">";
-            // line 32
+            // line 30
             echo twig_escape_filter($this->env, $this->getAttribute($context["singolaCampagna"], "getCampagnaContatto", array(), "method"), "html", null, true);
             echo "</div>
 \t\t\t\t\t\t\t\t<div>
@@ -103,13 +101,13 @@ class __TwigTemplate_218da88e13d6bab0f9dbd08bd541eed5b209f62df4b01a0c1cbd3fa885f
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['singolaCampagna'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 46
+        // line 44
         echo "
 \t\t\t\t\t</nav>
 
 ";
         
-        $__internal_6597d6df3ae4b36a977998a6715f38fd8c77cba054e1d8d041d0f09cc16864cd->leave($__internal_6597d6df3ae4b36a977998a6715f38fd8c77cba054e1d8d041d0f09cc16864cd_prof);
+        $__internal_bd066c01f88d75cbafe45bf6e4ac2532866c707ce2d6c1ab651edee3572d865e->leave($__internal_bd066c01f88d75cbafe45bf6e4ac2532866c707ce2d6c1ab651edee3572d865e_prof);
 
     }
 
@@ -125,7 +123,7 @@ class __TwigTemplate_218da88e13d6bab0f9dbd08bd541eed5b209f62df4b01a0c1cbd3fa885f
 
     public function getDebugInfo()
     {
-        return array (  107 => 46,  87 => 32,  82 => 29,  78 => 28,  65 => 17,  59 => 16,  41 => 4,  35 => 3,  11 => 1,);
+        return array (  105 => 44,  85 => 30,  80 => 27,  76 => 26,  63 => 15,  57 => 14,  41 => 4,  35 => 3,  11 => 1,);
     }
 }
 /* {% extends "AppBundle::layout_operatori.html.twig" %}*/
@@ -133,20 +131,18 @@ class __TwigTemplate_218da88e13d6bab0f9dbd08bd541eed5b209f62df4b01a0c1cbd3fa885f
 /* {% block menu %}*/
 /* */
 /* 		<nav class="contenitore_menu">*/
-/* 			<p class="home"><a href="operatore_index">HOME</a></p>*/
-/* 			<!--<p class="aziende"><a href="http://localhost/PROJECTWORK/Admin_aziende.html">AZIENDE</a></p>*/
-/* 			<p class="contatti"><a href="http://localhost/PROJECTWORK/-----------.html">CONTATTI</a></p>-->*/
-/* 			<p class="campagne"><a href="operatore_campagne_attive">CAMPAGNE ATTIVE</a></p>*/
-/* <!--			<p class="operatori"><a href="http://localhost/PROJECTWORK/Admin_operatori.html">OPERATORI</a></p>*/
-/* 			<p class="report"><a href="http://localhost/PROJECTWORK/----------.html">REPORT</a></p> -->*/
-/* 			<p class="campagne"><a href="operatore_campagne_passate">CAMPAGNE CONCLUSE</a></p>*/
+/* 			<!--<p class="home"><a href="operatore_index">HOME</a></p>*/
+/* 			-->*/
+/* 			<p class="campagne"><a href="operatore_campagne_attive">CAMPAGNE</a></p>*/
+/* */
+/* 			<!--<p class="campagne"><a href="operatore_campagne_passate">CAMPAGNE CONCLUSE</a></p>-->*/
 /* 		</nav>*/
 /* */
 /* {% endblock %}*/
 /* {% block contenuti %}*/
 /* */
 /* */
-/* 				<div class="titolo_contenuti">Campagne attive*/
+/* 				<div class="titolo_contenuti">Campagne */
 /* */
 /* 				</div>*/
 /* 					<div class="informazioni_operatori_campagne cf">*/
