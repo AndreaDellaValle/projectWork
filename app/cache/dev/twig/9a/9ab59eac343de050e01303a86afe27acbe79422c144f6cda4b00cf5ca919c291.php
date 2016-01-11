@@ -22,20 +22,20 @@ class __TwigTemplate_218da88e13d6bab0f9dbd08bd541eed5b209f62df4b01a0c1cbd3fa885f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_693cfdf830e91afbdfbd01dd0ccaf8ad8d050950a49e072f76994ca92db970d8 = $this->env->getExtension("native_profiler");
-        $__internal_693cfdf830e91afbdfbd01dd0ccaf8ad8d050950a49e072f76994ca92db970d8->enter($__internal_693cfdf830e91afbdfbd01dd0ccaf8ad8d050950a49e072f76994ca92db970d8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle::operatore_campagne_attive.html.twig"));
+        $__internal_0550b56c29ee79b0adc053d3be4352d543bd7bd186f0b09f01e606e6db5f81bc = $this->env->getExtension("native_profiler");
+        $__internal_0550b56c29ee79b0adc053d3be4352d543bd7bd186f0b09f01e606e6db5f81bc->enter($__internal_0550b56c29ee79b0adc053d3be4352d543bd7bd186f0b09f01e606e6db5f81bc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle::operatore_campagne_attive.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_693cfdf830e91afbdfbd01dd0ccaf8ad8d050950a49e072f76994ca92db970d8->leave($__internal_693cfdf830e91afbdfbd01dd0ccaf8ad8d050950a49e072f76994ca92db970d8_prof);
+        $__internal_0550b56c29ee79b0adc053d3be4352d543bd7bd186f0b09f01e606e6db5f81bc->leave($__internal_0550b56c29ee79b0adc053d3be4352d543bd7bd186f0b09f01e606e6db5f81bc_prof);
 
     }
 
     // line 3
     public function block_menu($context, array $blocks = array())
     {
-        $__internal_f203db3080bfe9d0a7efed578ac2f90b2e0dcbcf399b2647c62f270bb27c6d8d = $this->env->getExtension("native_profiler");
-        $__internal_f203db3080bfe9d0a7efed578ac2f90b2e0dcbcf399b2647c62f270bb27c6d8d->enter($__internal_f203db3080bfe9d0a7efed578ac2f90b2e0dcbcf399b2647c62f270bb27c6d8d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "menu"));
+        $__internal_206fee995c3ae62b524e927f243a4eec059dc586801ae43d5bd4cf9097c1229d = $this->env->getExtension("native_profiler");
+        $__internal_206fee995c3ae62b524e927f243a4eec059dc586801ae43d5bd4cf9097c1229d->enter($__internal_206fee995c3ae62b524e927f243a4eec059dc586801ae43d5bd4cf9097c1229d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "menu"));
 
         // line 4
         echo "
@@ -49,15 +49,15 @@ class __TwigTemplate_218da88e13d6bab0f9dbd08bd541eed5b209f62df4b01a0c1cbd3fa885f
 
 ";
         
-        $__internal_f203db3080bfe9d0a7efed578ac2f90b2e0dcbcf399b2647c62f270bb27c6d8d->leave($__internal_f203db3080bfe9d0a7efed578ac2f90b2e0dcbcf399b2647c62f270bb27c6d8d_prof);
+        $__internal_206fee995c3ae62b524e927f243a4eec059dc586801ae43d5bd4cf9097c1229d->leave($__internal_206fee995c3ae62b524e927f243a4eec059dc586801ae43d5bd4cf9097c1229d_prof);
 
     }
 
     // line 14
     public function block_contenuti($context, array $blocks = array())
     {
-        $__internal_bd066c01f88d75cbafe45bf6e4ac2532866c707ce2d6c1ab651edee3572d865e = $this->env->getExtension("native_profiler");
-        $__internal_bd066c01f88d75cbafe45bf6e4ac2532866c707ce2d6c1ab651edee3572d865e->enter($__internal_bd066c01f88d75cbafe45bf6e4ac2532866c707ce2d6c1ab651edee3572d865e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "contenuti"));
+        $__internal_ebc1a4185a9c9b583569c7b42287b4232b732f03524a72926257331879b04d41 = $this->env->getExtension("native_profiler");
+        $__internal_ebc1a4185a9c9b583569c7b42287b4232b732f03524a72926257331879b04d41->enter($__internal_ebc1a4185a9c9b583569c7b42287b4232b732f03524a72926257331879b04d41_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "contenuti"));
 
         // line 15
         echo "
@@ -89,7 +89,7 @@ class __TwigTemplate_218da88e13d6bab0f9dbd08bd541eed5b209f62df4b01a0c1cbd3fa885f
 \t\t\t\t\t\t\t\t\t\t<div class=\"contenitore_icone\">
 
 \t\t\t\t\t\t\t\t\t\t<div class=\"icona_rimuovere\"><i class=\"fa fa-check-circle fa-1x\"></i></div>
-\t\t\t\t\t\t\t\t\t\t<div class=\"icona_pausa\"><i class=\"fa fa-bullhorn fa-1x\"></i></div>
+\t\t\t\t\t\t\t\t\t\t<!--<div class=\"icona_pausa\"><i class=\"fa fa-bullhorn fa-1x\"></i></div>-->
 \t\t\t\t\t\t\t\t\t\t<div class=\"icona_assegna_contatti\"><i class=\"\"></i></div>
 \t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t</div>
@@ -107,7 +107,7 @@ class __TwigTemplate_218da88e13d6bab0f9dbd08bd541eed5b209f62df4b01a0c1cbd3fa885f
 
 ";
         
-        $__internal_bd066c01f88d75cbafe45bf6e4ac2532866c707ce2d6c1ab651edee3572d865e->leave($__internal_bd066c01f88d75cbafe45bf6e4ac2532866c707ce2d6c1ab651edee3572d865e_prof);
+        $__internal_ebc1a4185a9c9b583569c7b42287b4232b732f03524a72926257331879b04d41->leave($__internal_ebc1a4185a9c9b583569c7b42287b4232b732f03524a72926257331879b04d41_prof);
 
     }
 
@@ -161,7 +161,7 @@ class __TwigTemplate_218da88e13d6bab0f9dbd08bd541eed5b209f62df4b01a0c1cbd3fa885f
 /* 										<div class="contenitore_icone">*/
 /* */
 /* 										<div class="icona_rimuovere"><i class="fa fa-check-circle fa-1x"></i></div>*/
-/* 										<div class="icona_pausa"><i class="fa fa-bullhorn fa-1x"></i></div>*/
+/* 										<!--<div class="icona_pausa"><i class="fa fa-bullhorn fa-1x"></i></div>-->*/
 /* 										<div class="icona_assegna_contatti"><i class=""></i></div>*/
 /* 										</div>*/
 /* 								</div>*/

@@ -208,7 +208,7 @@ class PagineController extends Controller
             //->add('contatto', 'textarea', array('label' => 'Note e appuntamenti', 'attr' => ['class' => 'textarea']))
             
             ->add('feedback', 'choice', array(
-            'choices' => array('non contattato','risposta positiva','prezzo elevato', 'scarsa attrattiva', 'mancanze funzionali', 'offerta non chiara')))
+            'choices' => array('nessun feedback','risposta positiva','prezzo elevato', 'scarsa attrattiva', 'mancanze funzionali', 'offerta non chiara')))
             
             ->add('save', 'submit', array('label' => 'salva chiamata', 'attr' => ['class' => 'comincia_chiamata']))
             ->getForm();
@@ -217,6 +217,10 @@ class PagineController extends Controller
 
         if($form->isValid())
         {
+            $chiamata
+                ->setCampagna($listaContatti->getCampagnaContatto())
+                ->setContatto($listaContatti);
+            
             $em = $this->getDoctrine()->getManager();
 
             $em->persist($chiamata);
